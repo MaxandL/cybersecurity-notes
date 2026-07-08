@@ -18,6 +18,5 @@ Actualmente estoy siguiendo los módulos Fundamentals de Hack The Box Academy.
 ## Objetivos
 
 - Completar todos los módulos Fundamentals
-- Aprender Python para automatización
 - Construir un laboratorio de ciberseguridad
 - Obtener una certificación
