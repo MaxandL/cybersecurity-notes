@@ -6,13 +6,18 @@ Actualmente estoy aprendiendo:
 
 - Linux
 - Redes
-- Ciberseguridad
-- TryHackMe
-- Python
+- Windows
+- Active Directory
+- Aplicaciones Web
+- Fundamentos de Ciberseguridad
+
+## Plataforma de estudio
+
+Actualmente estoy siguiendo los módulos Fundamentals de Hack The Box Academy.
 
 ## Objetivos
 
-- Completar Pre Security
-- Completar Cyber Security 101
-- Completar Jr Penetration Tester
+- Completar todos los módulos Fundamentals
+- Aprender Python para automatización
 - Construir un laboratorio de ciberseguridad
+- Obtener una certificación
