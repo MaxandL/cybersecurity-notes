@@ -33,3 +33,12 @@ Además, destaca que cometer errores y practicar son parte fundamental del apren
 Este módulo explica que existen distintos tipos de aprendizaje, siendo el aprendizaje activo (practicar, discutir y aplicar los conocimientos) mucho más efectivo que solo leer teoría.
 También destaca la importancia de hacer descansos durante el estudio, ya que intentar aprender demasiada información en poco tiempo puede generar bloqueos y disminuir el rendimiento.
 
+## The Brain
+
+Este módulo explica, de forma general, cómo funciona el cerebro y cómo diferentes partes participan en procesos como el aprendizaje, la memoria, la toma de decisiones y el pensamiento consciente e inconsciente. También desmiente algunos mitos, como que solo usamos el 10% del cerebro o que aprender rápido significa ser más inteligente.
+
+## The Will
+
+Este módulo explica que para alcanzar un objetivo es necesario tener voluntad y mantener una meta clara. También habla sobre el miedo, diferenciando el miedo que nos protege en situaciones reales del miedo irracional, que aparece antes de intentarlo y puede impedirnos aprender o seguir avanzando.
+
+
