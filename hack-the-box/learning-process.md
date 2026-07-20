@@ -41,4 +41,28 @@ Este módulo explica, de forma general, cómo funciona el cerebro y cómo difere
 
 Este módulo explica que para alcanzar un objetivo es necesario tener voluntad y mantener una meta clara. También habla sobre el miedo, diferenciando el miedo que nos protege en situaciones reales del miedo irracional, que aparece antes de intentarlo y puede impedirnos aprender o seguir avanzando.
 
+## Documentation
+
+Este módulo explica la importancia de documentar y tomar notas de nuestro trabajo de forma clara, organizada y estructurada. Además, la documentación debe adaptarse al público al que va dirigida, ya que no se documenta de la misma manera para uso personal que para presentar un informe a un cliente.
+
+## Organization
+
+Este módulo explica la importancia de estar organizado durante el aprendizaje y las pruebas de penetración. Una buena organización permite trabajar de forma más eficiente, no perder tiempo buscando información y mantener una documentación clara y estructurada.
+
+# Focus
+
+Este módulo explica la diferencia entre el enfoque (focus) y la atención (attention). El enfoque es el objetivo o tema en el que decidimos concentrarnos, mientras que la atención es la concentración que ponemos en ese momento. Además, el enfoque influye directamente en la atención: si estamos enfocados en una meta, será más fácil mantener la atención y evitar distracciones.
+
+## Attention
+
+Este módulo explica qué es la atención, qué factores la afectan y cómo aprender a gestionarla. También destaca que la atención es limitada, por lo que es importante conocer cuánto tiempo podemos mantenernos concentrados, hacer descansos cuando sea necesario y adaptar nuestro entorno de estudio para aprender de forma más eficiente.
+
+## Comfort
+
+Este módulo explica qué es la zona de confort y cómo salir de ella es necesario para aprender. También enseña que cometer errores forma parte del proceso de aprendizaje y que, con la práctica, las situaciones que antes generaban miedo o incertidumbre se vuelven cada vez más fáciles.
+
+## Obstacles
+
+Este módulo explica que los principales obstáculos para aprender son el miedo, la mentalidad y la presión. Enseña que el miedo muchas veces es imaginario y está basado en lo que creemos que podría pasar, que la mentalidad puede limitar nuestro aprendizaje si pensamos "no puedo" en lugar de "todavía no puedo", y que debemos centrarnos en nuestra meta sin dejarnos influenciar por opiniones de personas que no han recorrido el mismo camino o no tienen la experiencia para juzgar nuestro progreso.
+
 
