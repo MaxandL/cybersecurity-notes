@@ -65,4 +65,9 @@ Este módulo explica qué es la zona de confort y cómo salir de ella es necesar
 
 Este módulo explica que los principales obstáculos para aprender son el miedo, la mentalidad y la presión. Enseña que el miedo muchas veces es imaginario y está basado en lo que creemos que podría pasar, que la mentalidad puede limitar nuestro aprendizaje si pensamos "no puedo" en lugar de "todavía no puedo", y que debemos centrarnos en nuestra meta sin dejarnos influenciar por opiniones de personas que no han recorrido el mismo camino o no tienen la experiencia para juzgar nuestro progreso.
 
+# Questioning
+
+Habla de la importancia de hacer preguntas para obtener la información necesaria antes de sacar conclusiones. Explica que un penetration tester debe cuestionar todo, diferenciar los hechos de las suposiciones y basar sus decisiones en evidencia. También propone una forma de investigar mediante preguntas como: qué sé, qué no sé, qué necesito saber y cómo puedo obtener esa información. En resumen, enseña que la calidad de las preguntas determina la calidad de las respuestas y que investigar correctamente es más importante que memorizar respuestas.
+
+
 
