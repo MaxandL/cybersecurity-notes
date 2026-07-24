@@ -69,5 +69,10 @@ Este módulo explica que los principales obstáculos para aprender son el miedo,
 
 Habla de la importancia de hacer preguntas para obtener la información necesaria antes de sacar conclusiones. Explica que un penetration tester debe cuestionar todo, diferenciar los hechos de las suposiciones y basar sus decisiones en evidencia. También propone una forma de investigar mediante preguntas como: qué sé, qué no sé, qué necesito saber y cómo puedo obtener esa información. En resumen, enseña que la calidad de las preguntas determina la calidad de las respuestas y que investigar correctamente es más importante que memorizar respuestas.
 
+# Handling Frustration
+
+Habla sobre cómo manejar la frustración durante el aprendizaje. Explica que la frustración es una emoción temporal que aparece cuando no conseguimos los resultados esperados o nos faltan recursos, como información o habilidades. También menciona que la tolerancia a la frustración puede entrenarse enfrentándonos conscientemente a situaciones difíciles y aprendiendo de ellas. Además, cuanto mejor preparados, organizados y más habilidades tengamos, menor será la frustración, ya que podremos afrontar los problemas con más calma y confianza.
+
+
 
 
