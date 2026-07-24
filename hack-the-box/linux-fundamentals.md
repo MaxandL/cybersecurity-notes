@@ -30,18 +30,18 @@ The Linux operating system can be broken down into layers:
 
 ## Linux File System Hierarchy
 
-- /	      Root directory containing the entire filesystem.
-- /bin	  Essential user commands.
-- /boot	  Bootloader and kernel files.
-- /dev	  Device files.
-- /etc	  System configuration files.
-- /home	  User home directories.
-- /lib	  Shared libraries.
-- /media	Removable media.
-- /mnt	  Temporary mount points.
-- /opt	  Optional third-party software.
-- /root	  Home directory of the root user.
-- /sbin	  System administration binaries.
-- /tmp	  Temporary files.
-- /usr	  User applications and libraries.
-- /var	  Variable data such as logs and caches.
+- /	    ->  Root directory containing the entire filesystem.
+- /bin	->  Essential user commands.
+- /boot	->  Bootloader and kernel files.
+- /dev	->  Device files.
+- /etc	->  System configuration files.
+- /home	->  User home directories.
+- /lib	->  Shared libraries.
+- /media ->	Removable media.
+- /mnt	->  Temporary mount points.
+- /opt	->  Optional third-party software.
+- /root	->  Home directory of the root user.
+- /sbin	->  System administration binaries.
+- /tmp	->  Temporary files.
+- /usr	->  User applications and libraries.
+- /var	->  Variable data such as logs and caches.
