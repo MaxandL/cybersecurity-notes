@@ -84,4 +84,3 @@ The Bash prompt is the command line displayed in the terminal that indicates the
 - `\n` → New line
 - `\s` → Shell name
 - `\j` → Number of background jobs
-- 
