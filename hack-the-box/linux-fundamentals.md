@@ -45,3 +45,43 @@ The Linux operating system can be broken down into layers:
 - /tmp	->  Temporary files.
 - /usr	->  User applications and libraries.
 - /var	->  Variable data such as logs and caches.
+
+## Terminal & Shell
+
+- The Linux terminal is the interface that allows the user to communicate with the operating system by entering text commands.
+- The shell interprets those commands and sends them to the Linux kernel to execute them.
+- Terminal emulators simulate a physical terminal inside a graphical interface (GUI), allowing users to access the shell without using a real console.
+- Tools like Tmux extend the terminal's functionality by allowing multiple sessions, panes, and workspaces in a single window.
+
+## Prompt
+
+The Bash prompt is the command line displayed in the terminal that indicates the system is ready to receive commands. It shows useful information such as the current user, the hostname, and the current working directory. The prompt can be customized by modifying the `PS1` variable to display additional information like the date, time, IP address, or full directory path, making it more useful during penetration testing and system administration.
+
+## Default Prompt
+
+```bash
+<username>@<hostname><current_directory>$
+```
+
+## Prompt Symbols
+
+| Symbol | Description |
+|---------|-------------|
+| `$` | Regular user prompt |
+| `#` | Root (privileged) user prompt |
+| `~` | User's home directory |
+
+## PS1 Special Characters
+
+- `\u` → Current username
+- `\h` → Hostname
+- `\H` → Full hostname
+- `\w` → Full current working directory
+- `\d` → Current date
+- `\t` → Current time (24-hour format)
+- `\T` → Current time (12-hour format)
+- `\@` → Current time
+- `\n` → New line
+- `\s` → Shell name
+- `\j` → Number of background jobs
+- 
