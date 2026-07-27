@@ -84,3 +84,15 @@ The Bash prompt is the command line displayed in the terminal that indicates the
 - `\n` → New line
 - `\s` → Shell name
 - `\j` → Number of background jobs
+
+## Getting Help
+
+This section explains how to find information about Linux commands by yourself instead of memorizing everything. It introduces the `ls` command as an example and shows how to use tools like `man`, `--help`, `-h`, and `apropos` to understand what commands do, their syntax, and available options. The main idea is to become independent and learn how to search for command documentation whenever needed.
+
+## Useful Commands
+
+- `ls` → List files and directories.
+- `man <command>` → Open the complete manual page.
+- `<command> --help` → Display a quick help menu with available options.
+- `<command> -h` → Show a short help menu (supported by some commands).
+- `apropos <keyword>` → Search for commands related to a keyword.
