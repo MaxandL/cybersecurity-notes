@@ -96,3 +96,76 @@ This section explains how to find information about Linux commands by yourself i
 - `<command> --help` → Display a quick help menu with available options.
 - `<command> -h` → Show a short help menu (supported by some commands).
 - `apropos <keyword>` → Search for commands related to a keyword.
+
+# System Information
+
+This section introduces essential Linux commands used to gather information about the operating system, users, hardware, processes, networking, and system configuration. It also explains how to connect to a remote Linux machine using SSH to practice these commands in a real environment.
+
+The module includes the first practical exercises, where you must use these commands to inspect the system and find specific information on your own. The goal is not only to learn the commands, but also to develop the ability to explore a Linux system independently, a fundamental skill for penetration testing and privilege escalation.
+
+## Commands
+
+- `ssh` → Connect to a remote machine using SSH.
+- `whoami` → Display the current username.
+- `id` → Show user ID (UID), group ID (GID), and group memberships.
+- `hostname` → Display the system hostname.
+- `uname` → Display operating system and kernel information.
+- `uname -a` → Show all available system information.
+- `uname -r` → Display the kernel release version.
+- `pwd` → Print the current working directory.
+- `ifconfig` → Display or configure network interfaces.
+- `ip` → Display or manage IP addresses, routes, and interfaces.
+- `netstat` → Display network connections and statistics.
+- `ss` → Display socket and network connection information.
+- `ps` → Display running processes.
+- `who` → Show users currently logged into the system.
+- `env` → Display environment variables.
+- `lsblk` → List block storage devices.
+- `lsusb` → List connected USB devices.
+- `lsof` → List open files and the processes using them.
+- `lspci` → List PCI devices.
+
+## Navigation
+
+This section explains how to navigate the Linux filesystem using the shell. It introduces the basic commands to identify the current directory, move between directories, and list their contents. It also covers hidden files, absolute paths, relative paths, tab auto-completion, command history, and shortcuts that make working in the terminal faster and more efficient.
+
+## Commands
+
+- `pwd` → Display the current working directory.
+- `ls` → List directory contents.
+- `ls -l` → Display a detailed list of files and directories.
+- `ls -la` → Display all files, including hidden files, with detailed information.
+- `cd <directory>` → Change the current directory.
+- `cd -` → Return to the previous directory.
+- `cd ..` → Move to the parent directory.
+- `clear` → Clear the terminal screen.
+- `Ctrl + L` → Clear the terminal screen (shortcut).
+- `↑` / `↓` → Browse command history.
+- `Ctrl + R` → Search through the command history.
+- `TAB` → Auto-complete files and directory names.
+
+# Working with Files and Directories
+
+This section explains how to create, organize, move, rename, and copy files and directories in Linux using the command line. It also introduces directory structures, working with file paths, and basic file management commands. Finally, it encourages experimenting with the commands and researching how to delete files and directories.
+
+## Commands
+
+- `touch <file>` → Create an empty file.
+- `mkdir <directory>` → Create a new directory.
+- `mkdir -p <path>` → Create nested parent directories automatically.
+- `tree` → Display the directory structure in a tree format.
+- `mv <source> <destination>` → Move or rename files and directories.
+- `cp <source> <destination>` → Copy files or directories.
+
+# Editing Files
+
+This section explains how to view and edit files in Linux using the terminal. It introduces the `cat` command to display file contents, the Nano editor for simple text editing, and the Vim editor for more advanced editing. It also explains Vim's different modes and recommends practicing with `vimtutor` to become familiar with its features.
+
+## Commands
+
+- `cat <file>` → Display the contents of a file.
+- `nano <file>` → Create or edit a file using the Nano editor.
+- `vim <file>` → Open or edit a file using the Vim editor.
+- `:q` → Quit Vim.
+- `vimtutor` → Launch the interactive Vim tutorial.
+  
