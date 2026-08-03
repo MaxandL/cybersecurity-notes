@@ -177,7 +177,7 @@ This section explains how to search for files, directories, and installed progra
 
 - Finds the executable path of a program.
 - Verifies whether a program is installed on the system.
-- which <command>
+- `which <command>`
 
 ### find
 
