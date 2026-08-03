@@ -169,3 +169,54 @@ This section explains how to view and edit files in Linux using the terminal. It
 - `:q` → Quit Vim.
 - `vimtutor` → Launch the interactive Vim tutorial.
   
+## Find Files and Directories
+
+This section explains how to search for files, directories, and installed programs in Linux using different commands.
+
+### which
+
+- Finds the executable path of a program.
+- Verifies whether a program is installed on the system.
+- which <command>
+
+### find
+
+- Searches for files and directories in real time.
+- Supports multiple filters to perform advanced searches.
+
+**Common Filters**
+
+- `-type f` → Search only for files.
+- `-type d` → Search only for directories.
+- `-name "*.conf"` → Search by file name or extension.
+- `-user root` → Search files owned by a specific user.
+- `-size +20k` → Search files larger than 20 KB.
+- `-newermt YYYY-MM-DD` → Search files newer than a specific date.
+- `-exec <command> {} \;` → Execute a command on each result.
+- `2>/dev/null` → Hide permission errors.
+
+**Example:**
+
+```bash
+find / -type f -name "*.conf" -user root -size +20k -newermt 2020-03-03 -exec ls -al {} \; 2>/dev/null
+```
+
+---
+
+### locate
+
+- Searches for files using a local database.
+- Much faster than `find`.
+- The database must be updated to keep the results accurate.
+
+**Update the database**
+
+```bash
+sudo updatedb
+```
+
+**Example:**
+
+```bash
+locate "*.conf"
+```
