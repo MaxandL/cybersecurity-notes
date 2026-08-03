@@ -220,3 +220,131 @@ sudo updatedb
 ```bash
 locate "*.conf"
 ```
+## File Descriptors and Redirections
+
+This section explains how Linux handles input and output using **File Descriptors (FDs)** and how data can be redirected between commands, files, and processes.
+
+### What are File Descriptors?
+
+A **File Descriptor (FD)** is a number used by the Linux kernel to identify an open file, terminal, socket, or any other input/output resource.
+
+Every process automatically starts with three standard file descriptors:
+
+- `0` → **STDIN (Standard Input)**  
+  Receives the input of a program, usually from the keyboard.
+
+- `1` → **STDOUT (Standard Output)**  
+  Displays the normal output of a program, usually on the terminal.
+
+- `2` → **STDERR (Standard Error)**  
+  Displays error messages separately from the normal output.
+
+**Example:**
+
+```bash
+cat
+```
+
+After typing:
+
+```
+Hello World
+```
+
+`cat` receives the text through **STDIN (0)** and prints it back through **STDOUT (1)**.
+
+---
+
+## Redirections
+
+### Redirect STDOUT (`>`)
+
+Sends the normal output to a file.
+
+```bash
+ls > files.txt
+```
+
+---
+
+### Append STDOUT (`>>`)
+
+Adds the output to the end of an existing file without overwriting it.
+
+```bash
+echo "Hello" >> notes.txt
+```
+
+---
+
+### Redirect STDIN (`<`)
+
+Uses a file as the input for a command.
+
+```bash
+cat < file.txt
+```
+
+---
+
+### Here Document (`<<`)
+
+Creates an input stream until the delimiter is reached.
+
+```bash
+cat << EOF > file.txt
+Hello World
+EOF
+```
+
+---
+
+### Redirect STDERR
+
+Store only error messages.
+
+```bash
+find / -name shadow 2> errors.txt
+```
+
+Discard all errors.
+
+```bash
+find / -name shadow 2>/dev/null
+```
+
+---
+
+### Redirect STDOUT and STDERR
+
+Redirect normal output and errors into different files.
+
+```bash
+find / -name shadow 1> output.txt 2> errors.txt
+```
+
+---
+
+## Pipes (`|`)
+
+A pipe sends the **STDOUT** of one command directly to the **STDIN** of another command.
+
+**Example:**
+
+```bash
+find /etc -name "*.conf" | grep systemd
+```
+
+The output of `find` becomes the input of `grep`.
+
+Pipes can also be chained together.
+
+```bash
+find /etc -name "*.conf" 2>/dev/null | grep systemd | wc -l
+```
+
+This command:
+- Searches for `.conf` files.
+- Ignores permission errors.
+- Filters results containing `systemd`.
+- Counts the total number of matching files.
