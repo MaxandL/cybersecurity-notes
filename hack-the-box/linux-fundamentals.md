@@ -342,7 +342,7 @@ Pipes can also be chained together.
 ```bash
 find /etc -name "*.conf" 2>/dev/null | grep systemd | wc -l
 ```
-a
+
 This command:
 - Searches for `.conf` files.
 - Ignores permission errors.
