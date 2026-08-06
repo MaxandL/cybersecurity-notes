@@ -348,3 +348,69 @@ This command:
 - Ignores permission errors.
 - Filters results containing `systemd`.
 - Counts the total number of matching files.
+
+## Filter Contents
+
+This section explains how to filter and process the contents of files and command output using different Linux utilities.
+
+### Commands Covered
+
+- **more**: Displays the contents of a file one page at a time.
+- **less**: Similar to `more`, but allows forward and backward navigation with more features.
+- **head**: Displays the first lines of a file (10 by default).
+- **tail**: Displays the last lines of a file (10 by default).
+- **sort**: Sorts the output alphabetically or numerically.
+- **grep**: Searches and filters lines that match a pattern.
+- **cut**: Extracts specific fields from each line using a delimiter.
+- **tr**: Replaces or transforms characters.
+- **column**: Formats the output into a readable table.
+- **awk**: Processes and extracts specific fields from the input.
+- **sed**: Replaces or modifies text using regular expressions.
+- **wc**: Counts lines, words, or characters.
+
+### Examples
+
+The module demonstrates how these commands can be combined to filter and process data.
+
+Example:
+
+```bash
+cat /etc/passwd | grep "/bin/bash" | cut -d":" -f1
+```
+
+This command:
+1. Reads the `/etc/passwd` file.
+2. Filters users whose shell is `/bin/bash`.
+3. Displays only the usernames.
+
+## Regular Expressions (RegEx)
+
+This section introduces Regular Expressions (RegEx), which are search patterns used to perform more precise text filtering.
+
+RegEx can be used with tools such as:
+
+- `grep`
+- `sed`
+- `awk`
+
+### Common Operators
+
+- `()` → Groups expressions.
+- `[]` → Defines character classes.
+- `{}` → Specifies how many times a pattern is repeated.
+- `|` → OR operator.
+- `.*` → Operates similarly to an AND operator, Matches any number of characters.
+
+### Examples
+
+```bash
+grep -E "(my|false)" /etc/passwd
+```
+
+Searches for lines containing **my** or **false**.
+
+```bash
+grep -E "(my.*false)" /etc/passwd
+```
+
+Searches for lines containing both **my** and **false** in that order.
