@@ -414,3 +414,161 @@ grep -E "(my.*false)" /etc/passwd
 ```
 
 Searches for lines containing both **my** and **false** in that order.
+
+# Permission Management
+
+This section explains how Linux manages permissions for files and directories.
+
+## File Type and Permissions
+
+You can view the permissions of files and directories using:
+
+```bash
+ls -l
+```
+
+Example:
+
+```text
+-rwxr-xr--
+```
+
+The **first character** indicates the file type:
+
+| Symbol | Type |
+|--------|------|
+| `-` | Regular file |
+| `d` | Directory |
+| `l` | Symbolic link |
+| `c` | Character device |
+| `b` | Block device |
+| `s` | Socket |
+| `p` | Named pipe (FIFO) |
+
+The next nine characters represent the permissions.
+
+Example:
+
+```text
+-rwxr-xr--
+```
+
+- Owner → `rwx`
+- Group → `r-x`
+- Others → `r--`
+
+---
+
+## File Permissions
+
+Every file and directory has three basic permissions:
+
+- **r (Read):** Allows reading the file or listing the contents of a directory.
+- **w (Write):** Allows modifying a file or creating, deleting, and renaming files inside a directory.
+- **x (Execute):** Allows executing a file or traversing (entering) a directory.
+
+Permissions are assigned to three categories:
+
+- **Owner (u)**
+- **Group (g)**
+- **Others (o)**
+
+---
+
+## Changing Permissions
+
+Permissions can be modified using **chmod**.
+
+### Symbolic mode
+
+```bash
+chmod u+x file
+chmod g-w file
+chmod o+r file
+chmod a+r file
+```
+
+Where:
+
+- `u` = owner
+- `g` = group
+- `o` = others
+- `a` = all users
+
+### Octal mode
+
+| Value | Permission |
+|------:|------------|
+| 7 | rwx |
+| 6 | rw- |
+| 5 | r-x |
+| 4 | r-- |
+| 3 | -wx |
+| 2 | -w- |
+| 1 | --x |
+| 0 | --- |
+
+Example:
+
+```bash
+chmod 754 file
+```
+
+- Owner → `rwx`
+- Group → `r-x`
+- Others → `r--`
+
+---
+
+## Changing Owner
+
+The owner and group of a file or directory can be changed using:
+
+```bash
+chown user:group file
+```
+
+Example:
+
+```bash
+chown root:root file
+```
+
+---
+
+## SUID and SGID
+
+Linux provides two special permission bits:
+
+- **SUID (Set User ID):** Executes the file with the permissions of the file owner.
+- **SGID (Set Group ID):** Executes the file with the permissions of the file's group.
+
+These permissions appear as **s** instead of **x**.
+
+Example:
+
+```text
+-rwsr-xr-x
+```
+
+---
+
+## Sticky Bit
+
+The Sticky Bit is mainly used on shared directories.
+
+When enabled:
+
+- Only the file owner, the directory owner, or **root** can delete or rename files.
+
+It appears as:
+
+- **t** → Sticky Bit enabled and execute permission exists.
+- **T** → Sticky Bit enabled but execute permission is missing.
+
+Example:
+
+```text
+drwxrwxrwt
+drwxrwxrwT
+```
