@@ -606,7 +606,7 @@ This executes cat /etc/shadow with root privileges.
 
 sudo is commonly used when a normal user needs to perform an administrative task.
 
-###su
+### su
 
 The su command allows us to switch to another user.
 By default, if no username is specified, it attempts to switch to the root user.
@@ -620,7 +620,7 @@ We can also specify a particular user:
 
 The command will request the appropriate credentials and then switch to that user's account.
 
-###useradd
+### useradd
 
 The useradd command is used to create a new user account.
 
@@ -631,7 +631,7 @@ Example:
 
 This creates a new user called alex.
 
-###userdel
+### userdel
 
 The userdel command is used to delete a user account.
 
@@ -640,7 +640,7 @@ Example:
 
 This removes the user account.
 
-###usermod
+### usermod
 
 The usermod command is used to modify an existing user account.
 
@@ -650,7 +650,7 @@ Example:
 `usermod <options> <username>`
 For example, it can be used to modify the groups associated with a user.
 
-###addgroup
+### addgroup
 
 The addgroup command is used to create a new group.
 
@@ -658,7 +658,7 @@ Example:
 `addgroup developers`
 This creates a group called developers.
 
-###delgroup
+### delgroup
 
 The delgroup command is used to remove a group from the system.
 
@@ -666,7 +666,7 @@ Example:
 `delgroup developers`
 This removes the developers group.
 
-###passwd
+### passwd
 
 The passwd command is used to change a user's password.
 
