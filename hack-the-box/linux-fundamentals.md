@@ -572,3 +572,105 @@ Example:
 drwxrwxrwt
 drwxrwxrwT
 ```
+
+##User Management
+
+User management is an important part of Linux system administration. It allows administrators to create, modify, and delete users and groups, as well as execute commands with different privileges.
+
+Linux uses users and groups to control access to files, directories, and system resources.
+
+## Executing Commands as a User
+
+Some files require higher privileges to access.
+
+For example, `/etc/shadow` contains sensitive information related to user passwords.
+
+If we try to access it as a normal user:
+
+```bash
+cat /etc/shadow
+```
+We may receive: cat: /etc/shadow: Permission denied.To execute a command with elevated privileges, we can use sudo.
+
+
+### sudo
+
+sudo stands for "superuser do".
+
+It allows a permitted user to execute a command with the privileges of another user, usually root.
+
+Example
+`sudo cat /etc/shadow`
+
+This executes cat /etc/shadow with root privileges.
+
+sudo is commonly used when a normal user needs to perform an administrative task.
+
+###su
+
+The su command allows us to switch to another user.
+By default, if no username is specified, it attempts to switch to the root user.
+
+Example
+`su`
+
+We can also specify a particular user:
+
+`su username`
+
+The command will request the appropriate credentials and then switch to that user's account.
+
+###useradd
+
+The useradd command is used to create a new user account.
+
+Basic syntax:
+`useradd <username>`
+Example:
+`useradd alex`
+
+This creates a new user called alex.
+
+###userdel
+
+The userdel command is used to delete a user account.
+
+Example:
+`userdel alex`
+
+This removes the user account.
+
+###usermod
+
+The usermod command is used to modify an existing user account.
+
+It can be used to change different properties of a user.
+
+Example:
+`usermod <options> <username>`
+For example, it can be used to modify the groups associated with a user.
+
+###addgroup
+
+The addgroup command is used to create a new group.
+
+Example:
+`addgroup developers`
+This creates a group called developers.
+
+###delgroup
+
+The delgroup command is used to remove a group from the system.
+
+Example:
+`delgroup developers`
+This removes the developers group.
+
+###passwd
+
+The passwd command is used to change a user's password.
+
+Example:
+`passwd alex`
+The system will ask for the new password.
+
