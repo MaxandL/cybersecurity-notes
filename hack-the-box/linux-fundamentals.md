@@ -600,7 +600,9 @@ sudo stands for "superuser do".
 It allows a permitted user to execute a command with the privileges of another user, usually root.
 
 Example
-`sudo cat /etc/shadow`
+```bash
+sudo cat /etc/shadow
+```
 
 This executes cat /etc/shadow with root privileges.
 
@@ -612,11 +614,14 @@ The su command allows us to switch to another user.
 By default, if no username is specified, it attempts to switch to the root user.
 
 Example
-`su`
+```bash
+su
+```
 
 We can also specify a particular user:
-
-`su username`
+```bash
+su username
+```
 
 The command will request the appropriate credentials and then switch to that user's account.
 
@@ -625,9 +630,13 @@ The command will request the appropriate credentials and then switch to that use
 The useradd command is used to create a new user account.
 
 Basic syntax:
-`useradd <username>`
+```bash
+useradd <username>
+```
 Example:
-`useradd alex`
+```bash
+useradd alex
+```
 
 This creates a new user called alex.
 
@@ -636,7 +645,9 @@ This creates a new user called alex.
 The userdel command is used to delete a user account.
 
 Example:
-`userdel alex`
+```bash
+userdel alex
+```
 
 This removes the user account.
 
@@ -647,7 +658,9 @@ The usermod command is used to modify an existing user account.
 It can be used to change different properties of a user.
 
 Example:
-`usermod <options> <username>`
+```bash
+usermod <options> <username>
+```
 For example, it can be used to modify the groups associated with a user.
 
 ### addgroup
@@ -655,7 +668,9 @@ For example, it can be used to modify the groups associated with a user.
 The addgroup command is used to create a new group.
 
 Example:
-`addgroup developers`
+```bash
+addgroup developers
+```
 This creates a group called developers.
 
 ### delgroup
@@ -663,7 +678,9 @@ This creates a group called developers.
 The delgroup command is used to remove a group from the system.
 
 Example:
-`delgroup developers`
+```bash
+delgroup developers
+```
 This removes the developers group.
 
 ### passwd
@@ -671,6 +688,8 @@ This removes the developers group.
 The passwd command is used to change a user's password.
 
 Example:
-`passwd alex`
+```bash
+passwd alex
+```
 The system will ask for the new password.
 
