@@ -13,10 +13,10 @@ Actualmente estoy aprendiendo:
 
 ## Plataforma de estudio
 
-Actualmente estoy siguiendo los módulos Fundamentals de Hack The Box Academy.
+Actualmente estoy siguiendo los módulos Fde el path CJCA (Junior Cybersecurity Analyst) de Hack The Box Academy.
 
 ## Objetivos
 
-- Completar todos los módulos Fundamentals
-- Construir un laboratorio de ciberseguridad
-- Obtener una certificación
+- Completar todos los módulos 
+- Rendir y aprobar el examen
+- Obtener la certificación
