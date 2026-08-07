@@ -693,3 +693,34 @@ passwd alex
 ```
 The system will ask for the new password.
 
+# Package Management
+
+Package management is used to install, update, and remove software on Linux systems.
+
+A **package** is an archive that contains software binaries, configuration files, dependency information, and information needed to keep track of updates and upgrades.
+
+## Package Managers
+
+Linux distributions use different package management systems. Some common package managers are:
+
+| Command | Description |
+|---|---|
+| `dpkg` | Installs, builds, removes, and manages Debian packages. |
+| `apt` | Provides a high-level command-line interface for package management. |
+| `aptitude` | An alternative high-level interface to the package manager. |
+| `snap` | Installs, configures, refreshes, and removes Snap packages. |
+| `gem` | Package manager for Ruby. |
+| `pip` | Package installer for Python. |
+| `git` | Distributed version control system used to download and manage repositories. |
+
+## Packages and Dependencies
+
+A package can require other packages to work correctly. These additional packages are called **dependencies**.
+
+For example:
+
+```text
+Program
+├── Dependency A
+├── Dependency B
+└── Dependency C
