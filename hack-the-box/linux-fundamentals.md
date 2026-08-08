@@ -724,3 +724,75 @@ Program
 ├── Dependency A
 ├── Dependency B
 └── Dependency C
+```
+
+# Service and Process Management
+
+## Services
+
+Services, also known as **daemons**, are programs that run in the background without direct user interaction. They perform important tasks and provide functionality to the system.
+
+There are two main types:
+
+- **System Services:** Services required by the operating system, usually started during boot.
+- **User-Installed Services:** Services installed by users, such as web servers, databases, SSH servers, etc.
+
+Daemons often have a `d` at the end of their name, for example:
+
+- `sshd` → SSH daemon
+- `systemd` → System and service manager
+
+The main things we usually want to do with services are:
+
+1. Start or restart a service.
+2. Stop a service.
+3. Check the status of a service.
+4. Enable or disable a service at boot.
+5. Find services and processes.
+
+---
+
+## Processes
+
+A **process** is a running program.
+
+Linux assigns every process a **PID (Process ID)**, which is a unique number used to identify the process.
+
+Processes can also have a **PPID (Parent Process ID)**, which identifies the process that started them.
+
+Information about processes can be found in:
+
+```bash
+  /proc/
+```
+
+## systemctl
+
+systemctl is used to manage services controlled by systemd.
+
+Start a service
+```bash
+systemctl start ssh
+```
+Starts the SSH service.
+
+Check the status of a service
+```bash
+systemctl status ssh
+```
+Shows whether the service is running, its PID, logs, and other information.
+
+For example:
+
+Active: active (running)
+Main PID: 846 (sshd)
+Enable a service at boot
+systemctl enable ssh
+
+Makes the service start automatically when the system boots.
+
+List all services
+```bash
+systemctl list-units --type=service
+```
+Shows the services currently loaded by systemd.
