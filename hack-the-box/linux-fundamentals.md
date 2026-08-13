@@ -939,5 +939,105 @@ echo '1' && ls MISSING_FILE && echo '3'
 ```
 Since ls MISSING_FILE produces an error, echo '3' is not executed.
 
+## Task Scheduling
 
+Task scheduling in Linux allows users and administrators to **automatically execute tasks at specific times or at regular intervals** without having to start them manually.
 
+Tasks can include:
+
+- Running scripts
+- Software updates
+- Database maintenance
+- Backups
+- System maintenance
+
+Task scheduling is also important in cybersecurity because scheduled tasks can be used legitimately for administration, but they can also be abused to maintain **persistence** by automatically executing malicious scripts at specific times or intervals.
+
+### Systemd
+
+`systemd` can be used to schedule processes and scripts to run at specific times or intervals.
+
+To schedule a task with `systemd`, we need:
+
+1. Create a **timer** → Defines when the task should run.
+2. Create a **service** → Defines what command or script should be executed.
+3. Activate the **timer** → Starts and enables the scheduled task.
+
+### Timer
+
+A timer can specify when and how often the service should run.
+
+Example:
+
+```ini
+[Unit]
+Description=My Timer
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=1hour
+
+[Install]
+WantedBy=timers.target
+```
+
+OnBootSec=3min means the task will run 3 minutes after the system boots.
+OnUnitActiveSec=1hour means the task will run every hour after the unit was activated.
+
+### Service
+
+The service defines the command or script that will be executed.
+
+```ini
+[Unit]
+Description=My Service
+
+[Service]
+ExecStart=/full/path/to/my/script.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+ExecStart specifies the full path to the script or command that should be executed.
+
+After creating or modifying a systemd service or timer, we need to reload systemd:
+```bash
+sudo systemctl daemon-reload
+```
+Then we can start and enable the timer:
+```bash
+sudo systemctl start mytimer.timer
+sudo systemctl enable mytimer.timer
+```
+-start → Starts the timer immediately.
+-enable → Makes the timer start automatically when the system boots.
+
+### Cron
+
+Cron is another tool used in Linux to schedule and automate tasks.
+
+Cron uses a file called crontab to define when a command or script should be executed.
+
+A Cron schedule has five time fields:
+
+Field	        Values	 Description
+-Minutes	    0-59	   Minute when the task should run
+-Hours	      0-23	   Hour when the task should run
+-Day of month	1-31   	 Day of the month
+-Month	      1-12	   Month when the task should run
+-Day of week	0-7	     Day of the week
+
+Example:
+```bash
+0 */6 * * * /path/to/update_software.sh
+```txt
+This executes update_software.sh every 6 hours.
+```
+Another example:
+```txt
+0 0 1 * * /path/to/scripts/run_scripts.sh
+```
+This executes the script at midnight on the first day of every month.
+
+-Systemd → Uses timers and services.
+-Cron → Uses a crontab file.
