@@ -1009,8 +1009,8 @@ Then we can start and enable the timer:
 sudo systemctl start mytimer.timer
 sudo systemctl enable mytimer.timer
 ```
--start → Starts the timer immediately.
--enable → Makes the timer start automatically when the system boots.
+- start → Starts the timer immediately.
+- enable → Makes the timer start automatically when the system boots.
 
 ### Cron
 
@@ -1021,11 +1021,11 @@ Cron uses a file called crontab to define when a command or script should be exe
 A Cron schedule has five time fields:
 
 Field	        Values	 Description
--Minutes	    0-59	   Minute when the task should run
--Hours	      0-23	   Hour when the task should run
--Day of month	1-31   	 Day of the month
--Month	      1-12	   Month when the task should run
--Day of week	0-7	     Day of the week
+- Minutes	    0-59	   Minute when the task should run
+- Hours	      0-23	   Hour when the task should run
+- Day of month	1-31   	 Day of the month
+- Month	      1-12	   Month when the task should run
+- Day of week	0-7	     Day of the week
 
 Example:
 ```bash
@@ -1039,5 +1039,5 @@ Another example:
 ```
 This executes the script at midnight on the first day of every month.
 
--Systemd → Uses timers and services.
--Cron → Uses a crontab file.
+- Systemd → Uses timers and services.
+- Cron → Uses a crontab file.
