@@ -1099,3 +1099,69 @@ They can allow a user to remotely access resources that are available inside ano
 | **NFS** | Share files and directories over a network |
 | **Web Server** | Host and serve websites and files |
 | **VPN** | Create a private connection to another network |
+
+
+## Web Services
+
+### Apache
+- Apache is one of the most widely used web servers.
+- It handles communication between web browsers and web servers.
+- Apache is modular, meaning it can be extended with different modules for specific tasks.
+Some important modules:
+ - mod_ssl → encrypts communication using SSL/TLS.
+ - mod_proxy → works with proxy servers and redirects requests.
+ - mod_headers → allows modification of HTTP headers.
+ - mod_rewrite → allows URLs and requests to be rewritten.
+- Apache can serve static content and generate dynamic web pages using languages such as PHP, Perl, Ruby, Python, JavaScript, and others.
+
+By default, Apache listens on HTTP port 80.
+
+The default Apache page can be accessed through:
+```bash
+http://localhost
+```
+If port 80 is already being used, Apache can be configured to use another port, such as 8080, by modifying:
+```bash
+/etc/apache2/ports.conf
+```
+Then the server can be accessed with:
+```bash
+http://localhost:8080
+```
+## cURL
+
+cURL is a command-line tool used to communicate with web servers and transfer data through protocols such as:
+
+- HTTP
+- HTTPS
+- FTP
+- SFTP
+- FTPS
+- SCP
+
+It can be used to retrieve web pages and inspect server responses directly from the terminal.
+```bash
+curl http://localhost
+```
+## Wget
+
+wget is another command-line tool used to download files from HTTP and FTP servers.
+```bash
+wget http://localhost
+```
+Unlike curl, wget normally saves the downloaded content to a local file, such as:
+```txt
+index.html
+```
+## Python 3 Web Server
+
+Python 3 can be used to quickly create a simple web server from any directory:
+```bash
+python3 -m http.server
+```
+By default, it listens on port 8000:
+```bash
+http://0.0.0.0:8000/
+```
+This is useful for quickly serving files or testing web communication.
+
