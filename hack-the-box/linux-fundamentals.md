@@ -1041,3 +1041,61 @@ This executes the script at midnight on the first day of every month.
 
 - Systemd → Uses timers and services.
 - Cron → Uses a crontab file.
+
+# Network Services
+
+Network services are programs that provide specific functionality over a network. Some of the important services covered are SSH, NFS, Web Servers, and VPNs.
+
+## SSH
+
+**SSH (Secure Shell)** allows us to connect remotely to another computer and interact with it through a terminal.
+
+The connection is encrypted, which protects the communication between the two machines.
+
+SSH can be used to:
+
+- Connect to a remote Linux system.
+- Execute commands on the remote system.
+- Manage a remote computer.
+- Transfer files securely.
+
+---
+
+## NFS
+
+**NFS (Network File System)** allows files and directories to be shared over a network.
+
+With NFS, a directory located on one system can be accessed from another system through the network.
+
+This allows users and systems to work with network files as if they were part of the local filesystem.
+
+---
+
+## Web Servers
+
+A **web server** is a service that provides web pages, files, and other resources to clients over a network.
+
+One example is **Apache**.
+
+Apache can be used to host websites and serve their files to users who connect to the server through HTTP or HTTPS.
+
+---
+
+## VPN
+
+A **VPN (Virtual Private Network)** creates a private connection between a device and another network through a network tunnel.
+
+VPNs can use encryption to protect the data transmitted through the connection.
+
+They can allow a user to remotely access resources that are available inside another network.
+
+---
+
+## Summary
+
+| Service | Purpose |
+|---|---|
+| **SSH** | Connect to and manage a remote computer securely |
+| **NFS** | Share files and directories over a network |
+| **Web Server** | Host and serve websites and files |
+| **VPN** | Create a private connection to another network |
