@@ -1239,3 +1239,126 @@ For example:
 0 * * * * /path/to/RSYNC_Backup.sh
 ```
 This runs the backup script every hour at minute 0.
+
+# File System Management
+
+---
+
+Linux file system management involves organizing, storing, and managing data on disks and other storage devices.
+
+Linux supports different file systems, such as:
+
+- `ext2`
+- `ext3`
+- `ext4`
+- `XFS`
+- `Btrfs`
+- `NTFS`
+
+## File Types
+
+Linux mainly uses three types of files:
+
+### Regular Files
+
+Regular files are the most common type of files. They can contain text, binary data, images, audio, or executable programs.
+
+### Directories
+
+Directories are special files that contain other files and directories. They are used to organize the file system.
+
+### Symbolic Links
+
+Symbolic links (`symlinks`) act as references or shortcuts to other files or directories. They allow us to access files located in another part of the file system without duplicating them.
+
+---
+
+### Inodes
+
+An **inode** is a data structure that stores metadata about a file or directory.
+
+It contains information such as:
+
+- Permissions
+- Owner
+- File size
+- Timestamps
+- Pointers to the blocks where the file's data is stored
+
+The inode does **not** store the actual file contents or the file name.
+
+The `inode table` contains all the inodes used by the file system.
+
+---
+
+### Disks and Partitions
+
+Linux allows us to manage physical storage devices such as:
+
+- Hard drives
+- SSDs
+- USB drives
+
+A disk can be divided into different **partitions**. Each partition can have its own file system, such as `ext4`, `NTFS`, or `FAT32`.
+
+### Fdisk
+
+`fdisk` can be used to manage disk partitions and display information about disks and their partitions.
+
+```bash
+sudo fdisk -l
+```
+### Mounting
+
+A partition or storage device needs to be assigned to a directory before its contents can be accessed through the Linux file system.
+
+This process is called mounting.
+
+The directory where the device is mounted is called the mount point.
+
+View Mounted File Systems
+
+```bash
+mount
+```
+Mount a USB Drive
+
+For example, to mount /dev/sdb1 to /mnt/usb:
+
+```bash
+sudo mount /dev/sdb1 /mnt/usb
+```
+Then we can access it:
+```bash
+cd /mnt/usb
+ls -l
+```
+Unmount a File System
+
+To unmount a file system:
+```bash
+sudo umount /mnt/usb
+```
+A file system cannot be unmounted while it is being used by an active process.
+
+### Lsof
+
+lsof can be used to find open files and processes that are using a file system.
+```bash
+lsof | grep cry0l1t3
+```
+## SWAP
+
+Swap is disk space that Linux can use when the available physical RAM is completely used.
+
+When the system runs out of physical memory, the kernel can move inactive memory pages from RAM to the Swap space. This process is called swapping.
+
+Swap can be created during the operating system installation or added later.
+
+### Mkswap
+
+mkswap prepares a device or file to be used as Swap space.
+
+### Swapon
+
+swapon activates the Swap space so that the system can use it.
