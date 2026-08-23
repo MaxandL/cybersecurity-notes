@@ -1165,3 +1165,77 @@ http://0.0.0.0:8000/
 ```
 This is useful for quickly serving files or testing web communication.
 
+## Backup and Restore
+
+
+Linux provides several tools that can be used to create backups and restore data. These tools help protect files and directories from data loss, corruption, or system failures.
+
+The main tools covered in this section are:
+
+- **Rsync**
+- **Duplicity**
+- **Deja Dup**
+
+### Rsync
+
+**Rsync** is an open-source tool used to create fast and secure backups locally or on a remote system.
+
+One of its main advantages is that it only transfers the parts of files that have changed, making it efficient when working with large amounts of data.
+
+It can be used to:
+
+- Backup directories.
+- Synchronize files between systems.
+- Transfer backups to remote servers.
+- Restore files and directories.
+
+### Duplicity
+
+Duplicity is a backup tool that builds on Rsync and adds encryption capabilities.
+
+It can be used to create encrypted backups and store them on:
+
+Remote servers.
+FTP servers.
+Cloud services such as Amazon S3.
+
+This provides an additional layer of security because sensitive backup data can be encrypted.
+
+### Deja Dup
+
+Deja Dup is a more user-friendly backup tool that provides a graphical interface.
+
+It makes it easier to create and restore backups without having to use the command line.
+
+Deja Dup also supports encrypted backups and uses Rsync behind the scenes.
+
+### Auto-Synchronization
+
+Rsync can be combined with Cron to automatically synchronize files at regular intervals.
+
+For example, we can create a script called:
+
+```bash
+RSYNC_Backup.sh
+```
+The script can contain:
+
+```bash
+#!/bin/bash
+
+rsync -avz -e ssh /path/to/mydirectory user@backup_server:/path/to/backup/directory
+```
+
+We need to make the script executable:
+```bash
+chmod +x RSYNC_Backup.sh
+```
+Then we can edit the user's crontab:
+```bash
+crontab -e
+```
+For example:
+```bash
+0 * * * * /path/to/RSYNC_Backup.sh
+```
+This runs the backup script every hour at minute 0.
