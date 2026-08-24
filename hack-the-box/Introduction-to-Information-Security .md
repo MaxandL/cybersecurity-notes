@@ -85,14 +85,15 @@ Vulnerability → Weakness in the system
 Threat        → Something that can exploit the weakness
 Risk          → Potential damage caused by the threat exploiting the vulnerability
 ```
-##Roles in Information Security
+## Roles in Information Security
 
 There are many different roles within Information Security, each with different responsibilities.
 
-Role | Description
-- Chief Information Security Officer (CISO)	Oversees the entire information security program and establishes the overall security strategy.
-- Security Architect	Designs secure systems and networks.
-- Penetration Tester	Identifies vulnerabilities through simulated attacks in a legal and ethical manner.
-- Incident Response Specialist	Manages and responds to security incidents.
-- Security Analyst	Monitors systems for threats and analyzes security data.
-- Compliance Specialist	Ensures that the organization follows security standards and regulations.
+| Role | Description |
+| --- | --- |
+| `Chief Information Security Officer (CISO)` | Oversees the entire information security program and establishes the overall security strategy. |
+| `Security Architect` | Designs secure systems and networks. |
+| `Penetration Tester` | Identifies vulnerabilities through simulated attacks in a legal and ethical manner. |
+| `Incident Response Specialist` | Manages and responds to security incidents. |
+| `Security Analyst` | Monitors systems for threats and analyzes security data. |
+| `Compliance Specialist` | Ensures that the organization follows security standards and regulations. |
