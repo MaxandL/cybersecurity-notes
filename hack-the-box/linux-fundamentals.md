@@ -1362,3 +1362,118 @@ mkswap prepares a device or file to be used as Swap space.
 ### Swapon
 
 swapon activates the Swap space so that the system can use it.
+
+# Containerization
+
+---
+
+Containerization is a technology used to package and run applications in isolated environments called **containers**.
+
+Containers are different from virtual machines because they **do not require a complete operating system for each instance**. Instead, containers share the **kernel of the host system**, making them lighter and more efficient than virtual machines.
+
+A container includes everything an application needs to run, such as:
+
+- Application code
+- Libraries
+- Dependencies
+- Configuration files
+- Required tools
+
+This makes applications more portable and consistent between different environments.
+
+### Docker
+
+**Docker** is an open-source platform used to create, deploy, and manage containers.
+
+Docker uses **images** as templates for creating containers. An image contains the files, libraries, dependencies, and configurations required by an application.
+
+A `Dockerfile` contains the instructions used to build a Docker image.
+
+Some important Docker commands are:
+
+```bash
+docker ps
+```
+Lists running containers.
+```bash
+docker start <container>
+```
+Starts a stopped container.
+```bash
+docker stop <container>
+```
+Stops a running container.
+```bash
+docker restart <container>
+```
+Restarts a container.
+```bash
+docker rm <container>
+```
+Removes a container.
+```bash
+docker rmi <image>
+```
+Removes a Docker image.
+```bash
+docker logs <container>
+```
+Displays the logs of a container.
+```bash
+Docker Build
+docker build -t FS_docker .
+```
+Builds a Docker image from a Dockerfile and gives it the tag FS_docker.
+
+Docker Run
+```bash
+docker run -p 8022:22 -p 8080:80 -d FS_docker
+```
+Creates and starts a container from the FS_docker image.
+
+The -p option maps ports from the host to the container, while -d runs the container in the background.
+
+Docker containers are stateless by design, meaning that changes made inside a container can be lost when the container is removed. To preserve data, Docker volumes can be used.
+
+### Linux Containers (LXC)
+
+LXC (Linux Containers) is another Linux containerization technology.
+
+LXC allows multiple isolated Linux environments to run on the same host. Like Docker, LXC containers share the host's Linux kernel instead of running a complete operating system kernel for every container.
+
+LXC uses Linux features such as:
+
+- cgroups → Control and limit resources such as CPU and memory.
+- namespaces → Isolate processes, networks, and file systems between containers.
+Install LXC
+```bash
+sudo apt install lxc -y
+```
+Create an LXC Container
+```bash
+sudo lxc-create -n linuxcontainer -t ubuntu
+```
+Creates a new Ubuntu container named linuxcontainer.
+
+LXC Management Commands
+```bash
+lxc-ls
+```
+Lists existing containers.
+```bash
+lxc-stop -n <container>
+```
+Stops a container.
+```bash
+lxc-start -n <container>
+```
+Starts a stopped container.
+```bash
+lxc-restart -n <container>
+```
+Restarts a container.
+```bash
+lxc-attach -n <container>
+```
+Connects to a container.
+
