@@ -97,3 +97,131 @@ There are many different roles within Information Security, each with different 
 | `Incident Response Specialist` | Manages and responds to security incidents. |
 | `Security Analyst` | Monitors systems for threats and analyzes security data. |
 | `Compliance Specialist` | Ensures that the organization follows security standards and regulations. |
+
+# Principles of Information Security
+
+---
+
+Information Security (InfoSec) is based on several fundamental principles used to protect information and systems.
+
+## 6 Principles of Information Security
+
+1. **Confidentiality**
+   - Ensures that information is only accessible to authorized users.
+   - Protects against unauthorized disclosure.
+   - Common implementations: encryption and access controls.
+
+2. **Integrity**
+   - Ensures that data remains accurate and complete.
+   - Protects against unauthorized modifications.
+   - Common implementations: hashing and digital signatures.
+
+3. **Availability**
+   - Ensures that authorized users can access information when needed.
+   - Protects against disruptions.
+   - Common implementations: redundancy and disaster recovery.
+
+4. **Non-repudiation**
+   - Ensures that a person cannot deny the authenticity of a signature or a message they sent.
+   - Important in legal and e-commerce contexts.
+   - Common implementations: digital signatures and audit logs.
+
+5. **Authentication**
+   - Verifies the identity of a user, process, or device.
+   - Ensures that only authorized entities can access resources.
+   - Common implementations: passwords, biometrics, and multi-factor authentication.
+
+6. **Privacy**
+   - Focuses on properly handling sensitive personal information.
+   - Helps organizations comply with data protection regulations.
+   - Common implementations: data minimization and consent management.
+
+---
+
+### Processes in Information Security
+
+InfoSec also involves several processes used to protect an organization's systems and data:
+
+1. **Risk Assessment**
+   - Identifies and evaluates threats and vulnerabilities.
+   - Determines the potential impact of security breaches.
+   - Helps prioritize security efforts.
+
+2. **Security Planning**
+   - Develops strategies to address identified risks.
+   - Creates security policies and procedures.
+   - Allocates resources for security initiatives.
+
+3. **Implementation of Security Controls**
+   - Puts security plans into practice.
+   - Includes technical solutions and security policies.
+   - Uses preventive and detective controls.
+
+4. **Monitoring and Detection**
+   - Continuously monitors security events and anomalies.
+   - Uses tools such as SIEM and IDS.
+   - Helps identify security incidents quickly.
+
+5. **Incident Response**
+   - Responds to detected security incidents.
+   - Contains and mitigates threats.
+   - Includes isolation, eradication, and recovery.
+
+6. **Disaster Recovery**
+   - Restores systems and data after major incidents.
+   - Uses backups and redundancy.
+   - Reduces downtime and data loss.
+
+7. **Continuous Improvement**
+   - Learns from security incidents and near-misses.
+   - Updates security measures according to new threats and technologies.
+   - Includes regular assessments and audits.
+
+---
+
+### Purpose of Information Security
+
+The main purposes of InfoSec are:
+
+- **Protect sensitive data**
+  - Prevent unauthorized access to personal data, financial records, and trade secrets.
+
+- **Ensure business continuity**
+  - Keep critical systems and data available during incidents or disasters.
+
+- **Maintain regulatory compliance**
+  - Follow laws and industry standards related to data protection.
+
+- **Preserve brand reputation**
+  - Prevent reputational damage caused by security breaches.
+
+- **Safeguard intellectual property**
+  - Protect ideas, inventions, and creative works from theft or unauthorized use.
+
+- **Enable secure digital transformation**
+  - Allow organizations to adopt new technologies while managing security risks.
+
+---
+
+### Tools in Information Security
+
+InfoSec professionals use many different tools:
+
+- **Firewalls** — Control incoming and outgoing network traffic.
+- **IDS/IPS** — Monitor and block suspicious activities.
+- **SIEM** — Collect and analyze security event data.
+- **Vulnerability Scanners** — Identify potential weaknesses in systems and applications.
+- **Penetration Testing Tools** — Simulate attacks to identify vulnerabilities.
+- **Encryption Tools** — Protect data confidentiality and integrity.
+- **Access Control Systems** — Manage permissions and authentication.
+- **Security Awareness Platforms** — Educate users about security best practices.
+
+### Common Penetration Testing Tools
+
+- **Nmap** — Network scanning and discovery.
+- **Wireshark** — Network protocol analysis.
+- **Metasploit** — Exploitation framework.
+- **Burp Suite** — Web application security testing.
+- **John the Ripper** — Password cracking.
+
+> **Note:** Penetration testing tools must only be used with proper authorization. Unauthorized security testing can have legal consequences
