@@ -225,3 +225,75 @@ InfoSec professionals use many different tools:
 - **John the Ripper** — Password cracking.
 
 > **Note:** Penetration testing tools must only be used with proper authorization. Unauthorized security testing can have legal consequences
+
+# Network Security
+
+---
+
+Network Security is a fundamental part of Information Security that protects computer networks, devices, and the data transmitted through them from internal and external threats.
+
+It uses different tools and techniques to detect, prevent, and defend against security threats.
+
+## Key Elements of Network Security
+
+| Element | Description |
+|---|---|
+| `Firewalls` | Act as barriers between trusted internal networks and untrusted external networks. They filter network traffic based on predefined security rules. |
+| `IDS/IPS` | Monitor network traffic for suspicious activities. IDS detects threats, while IPS can also take automated actions to block them. |
+| `VPNs` | Provide secure and encrypted connections over public networks, protecting data during transmission. |
+| `Access Control` | Uses authentication and authorization to ensure that only legitimate users can access network resources. |
+| `Encryption` | Protects sensitive data both during transmission and while stored, making it unreadable to unauthorized users. |
+
+---
+
+### Network Security Threats
+
+Cybersecurity threats can include:
+
+- **Ransomware**
+- **Data theft**
+- **State-sponsored espionage**
+- **Hacktivism**
+- **Unauthorized network access**
+
+A successful network breach can result in:
+
+- Financial losses
+- Reputation damage
+- Legal liabilities
+- Operational disruptions
+- Loss of sensitive information
+
+The attack surface has also increased because of technologies such as:
+
+- Cloud computing
+- Internet of Things (IoT)
+- Remote work
+
+Because of this, comprehensive network security is essential for protecting valuable assets and maintaining business continuity.
+
+---
+
+### Firewalls
+
+A firewall is an important first line of defense that filters network traffic between trusted and untrusted networks.
+
+However, a firewall does **not** provide complete protection. Cybercriminals can use advanced techniques to bypass firewall protections, so organizations need multiple security mechanisms instead of relying on a single security control.
+
+
+## Responsibility
+
+Network security is generally managed by an organization's **IT department**, specifically the **Network Security Team**.
+
+The Network Security Team is responsible for:
+
+- Designing network security infrastructure.
+- Implementing security controls.
+- Configuring and managing security devices.
+- Developing and enforcing security policies.
+- Monitoring network traffic.
+- Detecting potential threats.
+- Responding to security incidents.
+
+The team is often led by a **Network Security Manager**, who may report to the **CISO (Chief Information Security Officer)**.
+
