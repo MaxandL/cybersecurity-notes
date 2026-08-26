@@ -297,3 +297,86 @@ The Network Security Team is responsible for:
 
 The team is often led by a **Network Security Manager**, who may report to the **CISO (Chief Information Security Officer)**.
 
+# Application Security
+
+---
+
+Application Security is the process of protecting applications from security threats and vulnerabilities throughout their entire lifecycle.
+
+The main idea is that security should be considered from the beginning of the application development process, rather than being added only after the application has already been created.
+
+We can compare an application to a house. When building a house, security should be considered from the beginning. Doors, locks, windows, alarms, and other security measures should be included in the design. If we build the entire house first and only think about security afterward, fixing vulnerabilities can be much more difficult and expensive.
+
+The same applies to applications. Developers should consider security while designing, developing, testing, and maintaining the application.
+
+If security is not considered from the beginning, vulnerabilities may remain in the application and could later be exploited by attackers.
+
+A successful attack against an application can have serious consequences for an organization, including:
+
+- Financial losses
+- Data breaches
+- Damage to the company's reputation
+- Loss of customer trust
+- Operational disruptions
+- Legal or regulatory consequences
+
+For this reason, application security is an important part of cybersecurity. Organizations need to continuously identify vulnerabilities, test their applications, and improve their security throughout the application's lifecycle.
+
+The goal is not only to fix vulnerabilities after they are discovered, but to build applications with security in mind from the beginning.
+
+# Operational Security
+
+---
+
+Operational Security (`OpSec`) is the process of protecting an organization's critical information and assets during its day-to-day operations.
+
+The main idea is to identify what information is important, understand what could happen to it, identify its vulnerabilities, and apply the appropriate security measures to protect it.
+
+OpSec is a continuous process because threats and the organization's environment can change over time.
+
+## OpSec Process
+
+The OpSec process can be divided into several steps:
+
+1. `Assets Identification`
+   - Identify the information and assets that are important and need to be protected.
+   - These can include sensitive or critical information.
+
+2. `Threat Identification`
+   - Identify what could go wrong with the important assets.
+   - Determine the possible threats that could affect the organization's information.
+
+3. `Vulnerability Identification`
+   - Identify weaknesses that could allow threats to affect the organization's assets.
+   - Security measures can then be implemented to reduce these risks.
+
+4. `Access Control`
+   - Determine who should have access to specific information and systems.
+   - Only authorized users should have the permissions necessary for their roles.
+   - Authentication and authorization mechanisms can be used to control access.
+
+5. `Monitoring`
+   - Continuously monitor the environment for unauthorized access or new threats.
+   - Security measures can be adjusted when new threats or changes appear.
+
+---
+
+## Important Components of OpSec
+
+`Access Control` is an important part of OpSec because organizations need to determine who can access specific information and systems.
+
+`Asset Management` involves maintaining an up-to-date inventory of the organization's hardware, software, and data. Knowing what assets exist, where they are, and how important they are helps organizations apply appropriate security measures.
+
+`Change Management` ensures that changes to systems and processes are performed in a controlled way. Changes should be properly tested and approved to prevent new security vulnerabilities from being introduced.
+
+`Security Awareness Training` helps employees understand their role in maintaining security. This includes learning about phishing attacks, strong passwords, and the proper handling of sensitive information.
+
+---
+
+## OpSec Responsibility
+
+The responsibility for OpSec typically falls under the Information Security team, led by the Chief Information Security Officer (`CISO`).
+
+However, OpSec is not only the responsibility of the security team. It requires cooperation from all levels of the organization, including employees and executives.
+
+Security teams or external security consultants can test OpSec through security assessments and penetration testing. These tests can help identify weaknesses before real attackers can exploit them.
