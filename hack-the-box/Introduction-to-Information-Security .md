@@ -380,3 +380,110 @@ The responsibility for OpSec typically falls under the Information Security team
 However, OpSec is not only the responsibility of the security team. It requires cooperation from all levels of the organization, including employees and executives.
 
 Security teams or external security consultants can test OpSec through security assessments and penetration testing. These tests can help identify weaknesses before real attackers can exploit them.
+
+# Disaster Recovery and Business Continuity
+
+---
+
+`Disaster Recovery (DR)` and `Business Continuity (BC)` are important parts of an organization's security and resilience strategy. Their purpose is to help a company continue operating when significant problems or disruptions occur.
+
+## Disaster Recovery (DR)
+
+`Disaster Recovery` focuses on **recovering critical systems and data after a disaster or major incident**.
+
+A disaster could be:
+
+- Natural disasters, such as earthquakes or floods
+- Fires or other physical disasters
+- Major system failures
+- Cyberattacks
+
+The main goal of DR is to **minimize downtime and data loss** and restore important systems as quickly as possible.
+
+A DR plan can include:
+
+- Backing up data
+- Replicating systems
+- Using alternate systems or locations
+- Recovering critical services after an incident
+
+## Business Continuity (BC)
+
+`Business Continuity` is broader than Disaster Recovery. It focuses on **keeping the business operating during and after a disruption**.
+
+For example, a company could:
+
+- Allow employees to work from home
+- Use alternative suppliers
+- Move operations to a temporary office
+- Use alternative systems or procedures
+
+The goal is to ensure that the business can continue operating even when normal operations are disrupted.
+
+## Responsibility
+
+DR and BC are usually managed by a dedicated team, often led by a `Business Continuity Manager`.
+
+This team works with IT, operations, and executive leadership to:
+
+- Identify critical business functions
+- Assess risks
+- Create recovery strategies
+- Define `Recovery Time Objectives (RTOs)`
+- Define `Recovery Point Objectives (RPOs)`
+- Test recovery procedures
+
+Penetration testers can also help by identifying vulnerabilities that could affect the organization's DR and BC plans and by testing whether recovery procedures work effectively.
+
+Regular testing is important to make sure the plans are effective and that employees know what to do during a crisis.
+
+# Cloud Security
+
+---
+
+`Cloud Security` is about protecting data and applications that are stored in the cloud.
+
+The cloud can be compared to a **shared storage facility** where we keep important belongings. Since other people also use the same facility, security measures are necessary to prevent unauthorized access.
+
+Cloud security follows the `shared responsibility model`:
+
+- The `Cloud Service Provider` is responsible for securing the cloud infrastructure.
+- The `Customer / Administrator` is responsible for securing their own data, applications, passwords, and user access.
+- `Security Teams` plan and oversee security measures, perform risk assessments, and ensure that security is maintained.
+
+## Common Cloud Security Risks
+
+Some of the risks mentioned in the module are:
+
+- `Data Breach`: Unauthorized individuals gain access to sensitive information.
+- `Insecure APIs`: Vulnerabilities in APIs can be exploited by attackers.
+- `Misconfigured Cloud Storage`: Incorrect settings can unintentionally expose data.
+- `Account Hijacking`: Attackers gain control of an account and access its data.
+
+## Key Areas of Cloud Security
+
+### Data Protection
+
+`Data Protection` protects data using encryption.
+
+Data should be protected:
+
+- `At Rest`: When the data is stored.
+- `In Transit`: When the data is being transferred.
+
+### Identity and Access Management
+
+`Identity and Access Management (IAM)` ensures that only authorized individuals can access cloud resources.
+
+### Network Security
+
+`Network Security` protects data as it moves through the network.
+
+It includes:
+
+- `Firewalls`
+- `VPNs`
+
+### Compliance and Governance
+
+`Compliance and Governance` involves following laws, regulations, and industry standards related to how data is handled and secured.
