@@ -768,4 +768,78 @@ The attackers demanded payments between `$300 and $600` in Bitcoin.
 
 WannaCry exploited a vulnerability in Microsoft Windows systems, particularly computers that had not installed recent security updates.
 
+# Social Engineering
 
+---
+
+`Social Engineering` is a type of attack that uses `psychological manipulation` to deceive people into revealing confidential information or performing actions that compromise security.
+
+Instead of directly attacking technical systems, social engineering takes advantage of human nature and people's tendency to trust and help others.
+
+Even if a company has strong technical security measures, employees can become a weakness if an attacker manages to manipulate them into revealing passwords, clicking malicious links, downloading malicious files, or giving unauthorized access.
+
+## How It Works
+
+Social engineering attacks exploit human trust and psychological vulnerabilities.
+
+Attackers create situations that appear legitimate in order to convince a person to provide information or perform an action that compromises security.
+
+The five fundamental techniques mentioned in the module are:
+
+1. `Phishing`: Deceptive emails or messages that appear to come from legitimate sources and attempt to obtain sensitive information.
+2. `Pretexting`: Creating a false situation or identity to convince someone to provide information or perform an action.
+3. `Baiting`: Using something attractive or interesting to lure a person into a trap, such as a malicious USB drive.
+4. `Tailgating`: Following an authorized person into a restricted area without having the necessary credentials.
+5. `Quid Pro Quo`: Offering a benefit or service in exchange for information or access.
+
+## Impact
+
+Social engineering attacks can lead to:
+
+- `Data Breaches`: Unauthorized access to sensitive information.
+- `Financial Losses`: Monetary losses caused by fraud or theft.
+- `Reputational Damage`: Loss of customer trust and damage to the organization's reputation.
+- `Operational Disruption`: Compromised systems, downtime, and loss of productivity.
+
+# Insider Threat
+
+---
+
+An `Insider Threat` is a security threat that comes from within an organization.
+
+Unlike an external attacker, an insider already has `authorized access` to the organization's resources. This could be an employee, contractor, or business partner who misuses their access to harm the organization, either intentionally or unintentionally.
+
+## Types of Insider Threats
+
+There are three main types of insider threats:
+
+1. `Malicious Insiders`
+   - Individuals who intentionally seek to cause harm.
+   - They might steal sensitive information, sabotage systems, or commit fraud.
+
+2. `Negligent Insiders`
+   - Individuals who do not intend to cause harm but create security problems through carelessness or lack of awareness.
+   - For example, sending confidential information to the wrong person or falling for a phishing attack.
+
+3. `Compromised Insiders`
+   - External attackers obtain the credentials of an authorized user.
+   - They then use those credentials to access the organization's systems as if they were legitimate users.
+
+## How It Works
+
+Insider threats can follow several stages:
+
+1. `Motivation`
+   - The insider develops a reason to act against the organization.
+
+2. `Planning`
+   - The insider evaluates their access and identifies valuable information or systems that could be exploited.
+
+3. `Preparation`
+   - The insider gathers the necessary tools or information to carry out the attack.
+
+4. `Execution`
+   - The malicious activity takes place, such as stealing data, sabotaging systems, or sharing confidential information.
+
+5. `Concealment`
+   - The insider attempts to avoid detection by hiding their actions or making them appear as normal activities.
