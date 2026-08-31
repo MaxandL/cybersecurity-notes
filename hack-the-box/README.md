@@ -6,7 +6,7 @@ En esta carpeta documento mi progreso en los módulos de Hack The Box Academy.
 
 - ✅ Intro to Academy
 - ✅ Learning Process
-- ⚪ Introduction to Information Security
+- ✅ Introduction to Information Security
 - ⚪ Network Foundations
 - ⚪ Introduction to Networking
 - 🟡 Linux Fundamentals
