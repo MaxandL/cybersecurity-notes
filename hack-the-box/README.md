@@ -1,6 +1,6 @@
 # Hack The Box Academy
 
-En esta carpeta documento mi progreso en los módulos de Hack The Box Academy.
+In this folder I document my progress in the Hack The Box Academy modules.
 
 ## Módulos
 
