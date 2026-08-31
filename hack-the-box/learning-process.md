@@ -1,77 +1,77 @@
 ## Way of Thinking
 
-Este módulo explica que la teoría por sí sola no es suficiente para aprender ciberseguridad. La práctica es indispensable para desarrollar habilidades reales.
-La forma correcta de aprender es combinar el estudio de los conceptos (aprendizaje pasivo) con la práctica constante en laboratorios y ejercicios (aprendizaje activo).
-También destaca que no es necesario saberlo todo, sino aprender los fundamentos y desarrollar la capacidad de investigar, adaptarse y aprender nuevas tecnologías cuando sea necesario.
+This module explains that theory alone is not enough to learn cybersecurity. Practice is essential to develop real skills.
+The right way to learn is to combine studying concepts (passive learning) with constant practice in labs and exercises (active learning).
+It also emphasizes that you don't need to know everything, but rather learn the fundamentals and develop the ability to research, adapt, and learn new technologies when needed.
 
-## Think Outside the box
+## Think Outside the Box
 
-Basicamente enseña a como pensar como un hacker, El mensaje que se quiere transmitir es que muchas veces asumimos reglas que nunca fueron establecidas.
+Basically teaches how to think like a hacker. The message it wants to convey is that we often assume rules that were never actually established.
 
 ## Occam's Razor
 
-La Occam's Razor establece que, cuando existen varias explicaciones posibles para un problema, la más simple suele ser la más probable.
-En ciberseguridad esto significa que, antes de asumir escenarios complejos, conviene comprobar primero las causas más sencillas. Además, es más importante comprender el concepto general de una técnica que memorizar cada paso específico.
+Occam's Razor states that, when there are several possible explanations for a problem, the simplest one is usually the most likely.
+In cybersecurity this means that, before assuming complex scenarios, it's better to check the simplest causes first. It's also more important to understand the general concept of a technique than to memorize every specific step.
 
 ## Talent
 
-El talento no es un don ni una habilidad con la que se nace. Es el resultado de la práctica, la experiencia y del desarrollo de patrones de pensamiento que nos permiten resolver problemas de forma eficiente.
-Cuanto más practicamos y nos enfrentamos a diferentes situaciones, más desarrollamos nuestra forma de pensar y, por lo tanto, nuestro talento.
+Talent is not a gift or an ability you're born with. It's the result of practice, experience, and the development of thought patterns that allow us to solve problems efficiently.
+The more we practice and face different situations, the more we develop our way of thinking and, therefore, our talent.
 
-## Way Of Learning
+## Way of Learning
 
-Para aprender de forma efectiva es necesario tener un objetivo claro. Tener una meta permite superar los obstáculos y no perderse cambiando constantemente de tema.
-Además, es importante desarrollar una mentalidad "think outside the box", adaptarse a nuevas situaciones y no dejar que la frustración impida seguir aprendiendo.
+To learn effectively you need a clear goal. Having a goal helps you overcome obstacles and avoid getting lost by constantly switching topics.
+It's also important to develop a "think outside the box" mindset, adapt to new situations, and not let frustration stop you from continuing to learn.
 
 ## Learning Efficiency
 
-Este módulo explica que, debido a la enorme cantidad de información en ciberseguridad, es importante aprender de forma eficiente. Para ello debemos saber qué conocemos, qué nos falta aprender y cómo buscar la información que necesitamos.
-Además, destaca que cometer errores y practicar son parte fundamental del aprendizaje. No es necesario dedicar miles de horas para empezar a ser competente; con una práctica constante y enfocada se puede progresar mucho más rápido.
+This module explains that, due to the huge amount of information in cybersecurity, it's important to learn efficiently. To do this, we need to know what we already know, what we still need to learn, and how to find the information we need.
+It also emphasizes that making mistakes and practicing are a fundamental part of learning. You don't need thousands of hours to start becoming competent; with focused, consistent practice you can progress much faster.
 
 ## Learning Types
 
-Este módulo explica que existen distintos tipos de aprendizaje, siendo el aprendizaje activo (practicar, discutir y aplicar los conocimientos) mucho más efectivo que solo leer teoría.
-También destaca la importancia de hacer descansos durante el estudio, ya que intentar aprender demasiada información en poco tiempo puede generar bloqueos y disminuir el rendimiento.
+This module explains that there are different types of learning, with active learning (practicing, discussing, and applying knowledge) being much more effective than just reading theory.
+It also highlights the importance of taking breaks while studying, since trying to absorb too much information in too little time can cause mental blocks and reduce performance.
 
-## The Brain
+The Brain
 
-Este módulo explica, de forma general, cómo funciona el cerebro y cómo diferentes partes participan en procesos como el aprendizaje, la memoria, la toma de decisiones y el pensamiento consciente e inconsciente. También desmiente algunos mitos, como que solo usamos el 10% del cerebro o que aprender rápido significa ser más inteligente.
+This module explains, in general terms, how the brain works and how different parts are involved in processes like learning, memory, decision-making, and conscious and unconscious thought. It also debunks some myths, such as the idea that we only use 10% of our brain or that learning fast means being more intelligent.
 
 ## The Will
 
-Este módulo explica que para alcanzar un objetivo es necesario tener voluntad y mantener una meta clara. También habla sobre el miedo, diferenciando el miedo que nos protege en situaciones reales del miedo irracional, que aparece antes de intentarlo y puede impedirnos aprender o seguir avanzando.
+This module explains that reaching a goal requires willpower and keeping a clear objective in mind. It also talks about fear, distinguishing between fear that protects us in real situations and irrational fear, which shows up before we even try and can keep us from learning or moving forward.
 
 ## Documentation
 
-Este módulo explica la importancia de documentar y tomar notas de nuestro trabajo de forma clara, organizada y estructurada. Además, la documentación debe adaptarse al público al que va dirigida, ya que no se documenta de la misma manera para uso personal que para presentar un informe a un cliente.
+This module explains the importance of documenting and taking notes on our work in a clear, organized, and structured way. Documentation should also be adapted to its intended audience, since you don't document the same way for personal use as you would for presenting a report to a client.
 
-## Organization
+Organization
 
-Este módulo explica la importancia de estar organizado durante el aprendizaje y las pruebas de penetración. Una buena organización permite trabajar de forma más eficiente, no perder tiempo buscando información y mantener una documentación clara y estructurada.
+This module explains the importance of staying organized during learning and penetration testing. Good organization lets you work more efficiently, avoid wasting time searching for information, and keep clear, structured documentation.
 
-# Focus
+## Focus
 
-Este módulo explica la diferencia entre el enfoque (focus) y la atención (attention). El enfoque es el objetivo o tema en el que decidimos concentrarnos, mientras que la atención es la concentración que ponemos en ese momento. Además, el enfoque influye directamente en la atención: si estamos enfocados en una meta, será más fácil mantener la atención y evitar distracciones.
+This module explains the difference between focus and attention. Focus is the goal or topic we decide to concentrate on, while attention is the concentration we apply in that moment. Focus also directly influences attention: if we're focused on a goal, it becomes easier to maintain attention and avoid distractions.
 
 ## Attention
 
-Este módulo explica qué es la atención, qué factores la afectan y cómo aprender a gestionarla. También destaca que la atención es limitada, por lo que es importante conocer cuánto tiempo podemos mantenernos concentrados, hacer descansos cuando sea necesario y adaptar nuestro entorno de estudio para aprender de forma más eficiente.
+This module explains what attention is, what factors affect it, and how to learn to manage it. It also emphasizes that attention is limited, so it's important to know how long we can stay focused, take breaks when needed, and adapt our study environment to learn more efficiently.
 
 ## Comfort
 
-Este módulo explica qué es la zona de confort y cómo salir de ella es necesario para aprender. También enseña que cometer errores forma parte del proceso de aprendizaje y que, con la práctica, las situaciones que antes generaban miedo o incertidumbre se vuelven cada vez más fáciles.
+This module explains what the comfort zone is and how stepping out of it is necessary in order to learn. It also teaches that making mistakes is part of the learning process, and that with practice, situations that once caused fear or uncertainty become progressively easier.
 
 ## Obstacles
 
-Este módulo explica que los principales obstáculos para aprender son el miedo, la mentalidad y la presión. Enseña que el miedo muchas veces es imaginario y está basado en lo que creemos que podría pasar, que la mentalidad puede limitar nuestro aprendizaje si pensamos "no puedo" en lugar de "todavía no puedo", y que debemos centrarnos en nuestra meta sin dejarnos influenciar por opiniones de personas que no han recorrido el mismo camino o no tienen la experiencia para juzgar nuestro progreso.
+This module explains that the main obstacles to learning are fear, mindset, and pressure. It teaches that fear is often imaginary and based on what we believe might happen, that mindset can limit our learning if we think "I can't" instead of "I can't yet," and that we should stay focused on our own goal without being swayed by the opinions of people who haven't walked the same path or don't have the experience to judge our progress.
 
-# Questioning
+## Questioning
 
-Habla de la importancia de hacer preguntas para obtener la información necesaria antes de sacar conclusiones. Explica que un penetration tester debe cuestionar todo, diferenciar los hechos de las suposiciones y basar sus decisiones en evidencia. También propone una forma de investigar mediante preguntas como: qué sé, qué no sé, qué necesito saber y cómo puedo obtener esa información. En resumen, enseña que la calidad de las preguntas determina la calidad de las respuestas y que investigar correctamente es más importante que memorizar respuestas.
+Covers the importance of asking questions to gather the necessary information before drawing conclusions. It explains that a penetration tester must question everything, separate facts from assumptions, and base decisions on evidence. It also proposes a way of investigating through questions like: what do I know, what don't I know, what do I need to know, and how can I get that information. In short, it teaches that the quality of your questions determines the quality of your answers, and that investigating properly matters more than memorizing answers.
 
-# Handling Frustration
+## Handling Frustration
 
-Habla sobre cómo manejar la frustración durante el aprendizaje. Explica que la frustración es una emoción temporal que aparece cuando no conseguimos los resultados esperados o nos faltan recursos, como información o habilidades. También menciona que la tolerancia a la frustración puede entrenarse enfrentándonos conscientemente a situaciones difíciles y aprendiendo de ellas. Además, cuanto mejor preparados, organizados y más habilidades tengamos, menor será la frustración, ya que podremos afrontar los problemas con más calma y confianza.
+Covers how to handle frustration during learning. It explains that frustration is a temporary emotion that shows up when we don't get the results we expected or when we lack resources, such as information or skills. It also mentions that tolerance to frustration can be trained by consciously facing difficult situations and learning from them. Additionally, the better prepared, organized, and skilled we are, the less frustration we'll feel, since we'll be able to face problems with more calm and confidence.
 
 
 
