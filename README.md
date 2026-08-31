@@ -1,22 +1,20 @@
-# Mi Portafolio de Ciberseguridad
+# My Cybersecurity Portfolio
 
-Hola, soy Maximo.
+Hello, I'm Maximo.
 
-Actualmente estoy aprendiendo:
+I am currently learning:
 
 - Linux
-- Redes
+- Networking
 - Windows
-- Active Directory
-- Aplicaciones Web
-- Fundamentos de Ciberseguridad
+- Cybersecurity Fundamentals
 
-## Plataforma de estudio
+## Learning Platform
 
-Actualmente estoy siguiendo los módulos Fde el path CJCA (Junior Cybersecurity Analyst) de Hack The Box Academy.
+I am currently following the modules from the **CJCA (Junior Cybersecurity Analyst)** path on **Hack The Box Academy**.
 
-## Objetivos
+## Goals
 
-- Completar todos los módulos 
-- Rendir y aprobar el examen
-- Obtener la certificación
+- Complete all the modules
+- Take and pass the exam
+- Earn the certification
