@@ -309,3 +309,118 @@ In the `Client-Server Model`, a client sends a request to a server, and the serv
 For example, when accessing a website, a browser sends a request to the web server, which responds with the webpage data.
 
 ---
+
+# Network Communication
+
+---
+
+Network communication relies on three main components: `MAC addresses`, `IP addresses`, and `ports`. Together, they help deliver data to the correct device and application.
+
+## MAC Addresses
+
+A `Media Access Control (MAC) address` is a unique identifier assigned to a device's Network Interface Card (NIC). It operates at Layer 2 (Data Link Layer) of the OSI model and is used for communication within a local network.
+
+- Length: 48 bits.
+- Format: Hexadecimal, usually represented as six pairs of digits.
+- First 24 bits: Identify the manufacturer (OUI).
+- Last 24 bits: Identify the individual device.
+
+Switches use MAC addresses to forward data frames to the correct device. `ARP (Address Resolution Protocol)` maps IP addresses to MAC addresses within a local network.
+
+## IP Addresses
+
+An `Internet Protocol (IP) address` is a numerical identifier assigned to a device on an IP network. It operates at Layer 3 (Network Layer) and allows devices to communicate across different networks.
+
+There are two versions:
+
+- `IPv4`: Uses 32-bit addresses, usually written as four decimal numbers separated by dots (e.g., `192.168.1.1`).
+- `IPv6`: Uses 128-bit addresses, written in hexadecimal.
+
+Routers use IP addresses to determine where to forward packets. Unlike MAC addresses, IP addresses can change depending on the network and its configuration.
+
+## Ports
+
+A `port` is a number used to direct network traffic to a specific application or service on a device. Ports operate at Layer 4 (Transport Layer) and work with protocols such as TCP and UDP.
+
+Port numbers range from `0` to `65535` and are divided into three categories.
+
+| Category | Range | Description |
+|---|---|---|
+| Well-known ports | 0–1023 | Reserved for common services and protocols. |
+| Registered ports | 1024–49151 | Registered for specific services and applications. |
+| Dynamic/Private ports | 49152–65535 | Typically used temporarily by client applications during connections. |
+
+### Common Ports
+
+- `80`: HTTP
+- `443`: HTTPS
+- `20–21`: FTP
+- `1433`: Microsoft SQL Server
+
+## Example: Browsing the Internet
+
+When accessing a website, several steps take place:
+
+1. **DNS Lookup:** The computer resolves the domain name into an IP address.
+2. **Data Encapsulation:** The browser generates an HTTP request, which is encapsulated with TCP and destination port information. The destination IP address is also included.
+3. **Local Network Delivery:** The computer uses ARP to find the MAC address of its default gateway (router).
+4. **Data Transmission:** The frame is sent to the router, which forwards the packet toward the destination IP address. Other routers continue forwarding it across networks.
+5. **Server Processing:** The server receives the packet and directs the request to the application listening on the appropriate port.
+6. **Response Transmission:** The server sends a response back to the client's temporary port, and the response travels back through the network.
+
+
+# Dynamic Host Configuration Protocol (DHCP)
+
+---
+
+## Introduction to DHCP
+
+The `Dynamic Host Configuration Protocol (DHCP)` is a network management protocol that automatically configures devices on IP networks.
+
+It allows devices to receive an IP address and other network settings without manual configuration, including:
+
+- IP address
+- Subnet mask
+- Default gateway
+- DNS servers
+
+DHCP simplifies network management, helps prevent IP address conflicts, and reuses addresses when devices disconnect from the network.
+
+## How DHCP Works
+
+The DHCP process is known as `DORA`, which stands for `Discover`, `Offer`, `Request`, and `Acknowledge`.
+
+### DHCP Roles
+
+| Role | Description |
+|---|---|
+| `DHCP Server` | A network device, such as a router or dedicated server, that manages available IP addresses and network configuration parameters. |
+| `DHCP Client` | A device that requests an IP address and other network configuration parameters from the DHCP server. |
+
+### The DORA Process
+
+| Step | Description |
+|---|---|
+| `1. Discover` | The client broadcasts a DHCP Discover message to find available DHCP servers. |
+| `2. Offer` | The DHCP server responds with a DHCP Offer, proposing an IP address to the client. |
+| `3. Request` | The client sends a DHCP Request to accept the offered IP address. |
+| `4. Acknowledge` | The server sends a DHCP Acknowledge (ACK), confirming the IP address assignment. |
+
+After this process, the client can use the assigned IP address to communicate over the network.
+
+## DHCP Lease and Renewal
+
+DHCP addresses are assigned for a specific period called a `lease time`, rather than permanently.
+
+Before the lease expires, the client attempts to renew it by sending a DHCP Request to the server. If the server approves the renewal, it responds with a DHCP Acknowledge (ACK), allowing the client to continue using the address.
+
+## Example Scenario: Alice's Laptop
+
+1. Alice connects her new laptop to the office network.
+2. The laptop sends a DHCP Discover message to find a DHCP server.
+3. The server responds with a DHCP Offer, proposing the IP address `192.168.1.10`.
+4. The laptop sends a DHCP Request to accept the address.
+5. The server sends a DHCP Acknowledge (ACK), confirming the assignment.
+6. The laptop can now communicate on the network using `192.168.1.10`.
+
+When the lease approaches expiration, the laptop requests a renewal. If the server approves it, the laptop can continue using the assigned IP address.
