@@ -424,3 +424,61 @@ Before the lease expires, the client attempts to renew it by sending a DHCP Requ
 6. The laptop can now communicate on the network using `192.168.1.10`.
 
 When the lease approaches expiration, the laptop requests a renewal. If the server approves it, the laptop can continue using the assigned IP address.
+
+# Network Address Translation (NAT)
+
+---
+
+## What is NAT?
+
+`Network Address Translation (NAT)` is a process performed by a router that modifies the source or destination IP addresses in IP packet headers as they pass through the network.
+
+NAT allows multiple devices on a private network to share a single public IP address, helping conserve the limited IPv4 address space.
+
+## Private vs. Public IP Addresses
+
+| Type | Description |
+|---|---|
+| `Public IP` | A globally unique address assigned by an Internet Service Provider (ISP), used to communicate over the Internet. |
+| `Private IP` | An address used within local networks, such as homes, schools, and offices. Private IP addresses are not routable on the global Internet. |
+
+Common private IPv4 address ranges:
+
+- `10.0.0.0 – 10.255.255.255`
+- `172.16.0.0 – 172.31.255.255`
+- `192.168.0.0 – 192.168.255.255`
+
+## How NAT Works
+
+1. A device on a LAN sends a request using its private IP address.
+2. The router replaces the device's private source IP with its own public IP address.
+3. The request travels across the Internet to the destination server.
+4. The server sends a response to the router's public IP address.
+5. The router uses its NAT table to identify the internal device associated with the connection.
+6. The router translates the address and forwards the response to the correct device.
+
+For example, a laptop with the private IP `192.168.1.10` can access a website through a router with the public IP `203.0.113.50`.
+
+The router's NAT table tracks the connection, including port mappings, so the response reaches the correct device.
+
+## Types of NAT
+
+| Type | Description |
+|---|---|
+| `Static NAT` | Maps one private IP address directly to one public IP address. |
+| `Dynamic NAT` | Assigns a public IP address from an available pool to a private IP address as needed. |
+| `Port Address Translation (PAT)` | Also known as NAT Overload. Allows multiple private IP addresses to share one public IP address by distinguishing connections using unique port numbers. It is commonly used in home and small office networks. |
+
+## Benefits and Trade-Offs
+
+### Benefits
+
+- Conserves the limited IPv4 address space.
+- Provides a basic layer of security by not directly exposing the internal network structure.
+- Offers flexibility for internal IP addressing schemes.
+
+### Trade-Offs
+
+- Hosting a public server behind NAT may require additional configuration, such as port forwarding.
+- NAT can affect protocols that rely on end-to-end connectivity.
+- Adds complexity to network troubleshooting.
