@@ -479,6 +479,127 @@ The router's NAT table tracks the connection, including port mappings, so the re
 
 ### Trade-Offs
 
+# Internet Architecture
+
+---
+
+## What is Internet Architecture?
+
+`Internet Architecture` describes how data is organized, transmitted, and managed across networks. Different architectures address different needs, and multiple models can be combined to create hybrid systems.
+
+Each architecture has trade-offs in scalability, performance, security, and manageability.
+
+## Peer-to-Peer (P2P) Architecture
+
+In a `Peer-to-Peer (P2P)` network, each node acts as both a client and a server. Devices communicate directly and share resources such as files, processing power, and bandwidth without requiring a central server to host the data.
+
+A common example is torrenting, where users called `seeders` can upload files for others to download from multiple sources.
+
+### Advantages
+
+- `Scalability`: Adding nodes can increase available resources.
+- `Resilience`: Other nodes can continue functioning when one goes offline.
+- `Cost distribution`: Storage and bandwidth are distributed among peers.
+
+### Disadvantages
+
+- `Management complexity`: Security policies and updates are harder to manage.
+- `Potential reliability issues`: Resources may become unavailable when too many peers leave.
+- `Security challenges`: Each node can introduce potential vulnerabilities.
+
+## Client-Server Architecture
+
+In the `Client-Server` model, clients send requests to centralized servers, which process the requests and return responses. For example, a browser requests a webpage from a web server.
+
+### Types of Client-Server Architecture
+
+| Type | Description |
+|---|---|
+| `Single-Tier` | The client, server, and database reside on the same machine. |
+| `Two-Tier` | The client handles the presentation layer, while the server manages the data layer. |
+| `Three-Tier` | Separates the presentation layer, application server, and database server. |
+| `N-Tier` | Uses multiple tiers to distribute processing and business logic across separate components. |
+
+### Advantages
+
+- `Centralized control`: Easier to manage and update.
+- `Security`: Central security policies can be applied.
+- `Performance`: Dedicated servers can be optimized for specific tasks.
+
+### Disadvantages
+
+- `Single point of failure`: If the central server fails, clients may lose access.
+- `High cost and maintenance`: Requires ongoing operation and expert management.
+- `Network congestion`: High traffic can slow down or disrupt connections.
+
+## Hybrid Architecture
+
+A `Hybrid Architecture` combines Client-Server and P2P models. Central servers handle tasks such as authentication and coordination, while data can be transferred directly between peers.
+
+For example, a video conferencing application may use central servers for login and meeting management, while audio and video data travels directly between participants.
+
+### Advantages
+
+- `Efficiency`: Peers share data, reducing server workload.
+- `Control`: Central servers can manage authentication, directory services, and indexing.
+
+### Disadvantages
+
+- `Complex implementation`: Requires coordination between centralized and distributed components.
+- `Potential single point of failure`: A central server failure may interrupt peer discovery.
+
+## Cloud Architecture
+
+`Cloud Architecture` uses computing infrastructure hosted and managed by third-party providers such as AWS, Azure, and Google Cloud. It provides on-demand access to servers, storage, and applications over the Internet.
+
+Examples include Google Drive and Dropbox, which operate under the `Software as a Service (SaaS)` model.
+
+### Five Essential Characteristics
+
+1. `On-demand self-service`: Users can set up and manage services without human assistance.
+2. `Broad network access`: Services are accessible from Internet-connected devices.
+3. `Resource pooling`: Resources are shared and allocated dynamically among users.
+4. `Rapid elasticity`: Resources can scale up or down according to demand.
+5. `Measured service`: Resource usage is tracked for billing.
+
+### Advantages
+
+- `Scalability`: Resources can be added or removed as needed.
+- `Reduced cost and maintenance`: The provider manages the hardware.
+- `Flexibility`: Services are accessible from anywhere with an Internet connection.
+
+### Disadvantages
+
+- `Vendor lock-in`: Moving to another provider can be complex.
+- `Security and compliance`: Third-party data hosting raises privacy concerns.
+- `Connectivity`: Requires a stable Internet connection.
+
+## Software-Defined Networking (SDN)
+
+`Software-Defined Networking (SDN)` separates the `control plane`, which decides where traffic should go, from the `data plane`, which forwards the traffic.
+
+In SDN, a centralized software-based controller manages network decisions, while network devices execute its instructions. This allows administrators to adjust network policies and routing through software.
+
+### Advantages
+
+- `Centralized control`: Simplifies network management.
+- `Programmability and automation`: Configurations can be changed through software.
+- `Scalability and efficiency`: Traffic flows can be optimized dynamically.
+
+### Disadvantages
+
+- `Controller vulnerability`: A controller failure can affect the network.
+- `Complex implementation`: Requires specialized skills and software or hardware.
+
+## Key Comparisons
+
+| Architecture | Centralization | Scalability | Typical Use Cases |
+|---|---|---|---|
+| `P2P` | Decentralized or partially centralized | High as peers grow | File-sharing, blockchain |
+| `Client-Server` | Centralized | Moderate | Websites, email services |
+| `Hybrid` | Partially centralized | Higher than Client-Server | Messaging apps, video conferencing |
+| `Cloud` | Centralized in provider infrastructure | High | Cloud storage, SaaS, PaaS |
+| `SDN` | Centralized control plane | High, policy-driven | Datacenters, large enterprises |
 - Hosting a public server behind NAT may require additional configuration, such as port forwarding.
 - NAT can affect protocols that rely on end-to-end connectivity.
 - Adds complexity to network troubleshooting.
