@@ -7,8 +7,8 @@ In this folder I document my progress in the Hack The Box Academy modules.
 - ✅ Intro to Academy
 - ✅ Learning Process
 - ✅ Introduction to Information Security
-- ⚪ Network Foundations
-- ⚪ Introduction to Networking
+- ✅ Network Foundations
+- 🟡 Introduction to Networking
 - 🟡 Linux Fundamentals
 - ⚪ Introduction to Bash Scripting
 - ⚪ Windows Fundamentals
