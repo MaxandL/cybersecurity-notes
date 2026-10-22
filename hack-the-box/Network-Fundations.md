@@ -603,3 +603,79 @@ In SDN, a centralized software-based controller manages network decisions, while
 - Hosting a public server behind NAT may require additional configuration, such as port forwarding.
 - NAT can affect protocols that rely on end-to-end connectivity.
 - Adds complexity to network troubleshooting.
+
+  # Wireless Networks
+
+---
+
+## What are Wireless Networks?
+
+A `wireless network` connects devices using radio waves or other wireless signals instead of physical cables. It allows devices such as computers, smartphones, and IoT devices to communicate, share files, and access the Internet.
+
+### Advantages
+
+- `Mobility`: Devices can move within the coverage area.
+- `Ease of installation`: Requires less cabling.
+- `Scalability`: Adding devices is easier than in wired networks.
+
+### Disadvantages
+
+- `Interference`: Signals can be disrupted by walls, electronics, and atmospheric conditions.
+- `Security risks`: Wireless transmissions can be intercepted without proper security measures.
+- `Speed limitations`: Wireless connections are generally slower than wired connections of the same generation.
+
+## Wireless Router
+
+A `wireless router` forwards data between networks and provides Wi-Fi connectivity. In homes and small offices, it combines two main functions:
+
+| Function | Description |
+|---|---|
+| `Routing` | Directs data to its destination within the network or on the Internet. |
+| `Wireless Access Point` | Allows devices to connect to the network through Wi-Fi. |
+
+### Main Components
+
+| Component | Description |
+|---|---|
+| `WAN Port` | Connects the router to the Internet source. |
+| `LAN Ports` | Connect wired devices, such as desktop computers and printers. |
+| `Antennae` | Transmit and receive wireless signals. |
+| `Processor and Memory` | Handle routing and network management tasks. |
+
+## Mobile Hotspot
+
+A `mobile hotspot` allows a smartphone or another hotspot device to share its cellular Internet connection through Wi-Fi.
+
+Other devices, such as laptops and tablets, can connect to it to access the Internet through a cellular network like `4G` or `5G`.
+
+Hotspots usually have a range of a few meters and can significantly drain the battery of the device providing the connection. Access is generally protected by a password.
+
+## Cell Towers
+
+A `cell tower`, also known as a `cell site`, contains antennas and communication equipment that provide cellular coverage over a geographic area called a `cell`.
+
+Mobile devices communicate with towers using radio frequencies. As users move, their devices can switch between towers to maintain connectivity.
+
+### Types of Cell Coverage
+
+- `Macro Cells`: Large towers that provide coverage over several kilometers, making them suitable for rural areas.
+- `Micro/Small Cells`: Smaller installations commonly used in urban areas to serve densely populated locations and fill coverage gaps.
+
+Cell towers connect to the core network through backhaul links, typically using fiber optics or microwave links. Base Station Controllers (BSCs) manage multiple towers and help coordinate the transfer of calls and data sessions between cells.
+
+## Frequencies in Wireless Communications
+
+Wireless networks use radio waves at specific frequencies, measured in `Hertz (Hz)`. Different frequencies offer different trade-offs between range, speed, and interference.
+
+| Frequency Band | Characteristics |
+|---|---|
+| `2.4 GHz` | Used by Wi-Fi standards such as 802.11b/g/n. Provides better wall penetration but is more prone to interference from devices such as microwaves and Bluetooth equipment. |
+| `5 GHz` | Used by Wi-Fi standards such as 802.11a/n/ac/ax. Offers faster speeds but has a shorter range than 2.4 GHz. |
+| `Cellular Bands` | Used by 4G (LTE) and 5G networks. Frequencies range from around 700 MHz to 2.6 GHz and, for some 5G services, 28 GHz and beyond. |
+
+### Frequency Trade-Offs
+
+- `Lower frequencies`: Generally travel farther but carry less data.
+- `Higher frequencies`: Can carry more data but typically have a shorter range.
+- `Interference`: Can occur when many devices use the same frequency bands.
+- `Frequency regulation`: Government agencies regulate frequency allocations to help organize wireless communications and prevent interference.
