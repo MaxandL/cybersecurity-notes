@@ -679,3 +679,156 @@ Wireless networks use radio waves at specific frequencies, measured in `Hertz (H
 - `Higher frequencies`: Can carry more data but typically have a shorter range.
 - `Interference`: Can occur when many devices use the same frequency bands.
 - `Frequency regulation`: Government agencies regulate frequency allocations to help organize wireless communications and prevent interference.
+
+# Network Security
+
+---
+
+## What is Network Security?
+
+`Network Security` refers to the measures used to protect network data, applications, devices, and systems from unauthorized access or damage.
+
+Its main goal is to maintain the `CIA Triad`:
+
+| Principle | Description |
+|---|---|
+| `Confidentiality` | Only authorized users can access the data. |
+| `Integrity` | Data remains accurate and unaltered. |
+| `Availability` | Network resources remain accessible when needed. |
+
+## Firewalls
+
+A `Firewall` is a hardware device, software application, or combination of both that monitors incoming and outgoing network traffic. It uses predefined rules, known as `firewall policies` or `access control lists (ACLs)`, to allow or block traffic.
+
+Firewalls commonly analyze IP addresses, port numbers, and protocols. They can also log network events and generate alerts about suspicious activity.
+
+### Types of Firewalls
+
+| Type | Description |
+|---|---|
+| `Packet Filtering Firewall` | Operates at OSI Layers 3 and 4, filtering traffic based on IP addresses, ports, and protocols. |
+| `Stateful Inspection Firewall` | Tracks connection states and allows traffic based on established connections. |
+| `Application Layer Firewall (Proxy Firewall)` | Operates up to Layer 7 and can inspect traffic content, such as HTTP requests, to block malicious requests. |
+| `Next-Generation Firewall (NGFW)` | Combines stateful inspection with features such as deep packet inspection, intrusion detection/prevention, and application control. |
+
+A firewall can be built into a home router or installed as a separate device in a larger network.
+
+## Intrusion Detection and Prevention Systems (IDS/IPS)
+
+`Intrusion Detection Systems (IDS)` and `Intrusion Prevention Systems (IPS)` monitor network traffic or system activity to identify suspicious behavior and potential attacks.
+
+| System | Function |
+|---|---|
+| `IDS` | Detects suspicious activity and generates alerts but does not block the traffic. |
+| `IPS` | Detects suspicious activity and can block or reject malicious traffic in real time. |
+
+### Detection Techniques
+
+- `Signature-Based Detection`: Compares traffic against a database of known exploits.
+- `Anomaly-Based Detection`: Identifies activity that differs from normal behavior.
+
+### Types of IDS/IPS
+
+| Type | Description |
+|---|---|
+| `Network-Based IDS/IPS (NIDS/NIPS)` | Inspects network traffic at strategic points in the network. |
+| `Host-Based IDS/IPS (HIDS/HIPS)` | Runs on individual devices and monitors their traffic and system logs. |
+
+IDS/IPS solutions can be placed behind a firewall, in a `DMZ (Demilitarized Zone)`, or directly on endpoint devices.
+
+## Network Security Best Practices
+
+| Practice | Description |
+|---|---|
+| `Define Clear Policies` | Apply consistent firewall rules based on the principle of `least privilege`, allowing only what is necessary. |
+| `Regular Updates` | Keep firewalls, IDS/IPS signatures, and operating systems updated. |
+| `Monitor and Log Events` | Review firewall logs, IDS/IPS alerts, and system logs to identify suspicious activity. |
+| `Layered Security` | Use `defense in depth`, combining firewalls, IDS/IPS, antivirus, and endpoint protection. |
+| `Periodic Penetration Testing` | Test security policies and devices by simulating real attacks. |
+
+## Summary
+
+- `CIA Triad`: Confidentiality, Integrity, and Availability.
+- `Firewall`: Monitors traffic and allows or blocks it according to predefined rules.
+- `IDS`: Detects suspicious activity and generates alerts.
+- `IPS`: Detects and prevents malicious traffic.
+- `Signature-Based Detection`: Identifies known threats using attack signatures.
+- `Anomaly-Based Detection`: Identifies unusual activity.
+- `NIDS/NIPS`: Monitor network traffic.
+- `HIDS/HIPS`: Monitor individual hosts and their system activity.
+- `Least Privilege`: Allows only the access necessary.
+- `Defense in Depth`: Uses multiple security layers to improve protection.
+
+
+  # Data Flow Example
+
+---
+
+## 1. Accessing the Internet
+
+A laptop connects to a home `Wireless LAN (WLAN)` by selecting the correct network (`SSID`) and authenticating with the required password if `WPA2/WPA3` is enabled. Once connected, `DHCP` handles the laptop's IP configuration.
+
+## 2. DHCP Configuration
+
+Before accessing a website, the operating system checks whether the laptop has a valid IP address.
+
+- `DHCP`: Assigns a private IP address to the laptop, such as `192.168.1.10`.
+- `DHCP Acknowledgement`: Provides configuration details, including the subnet mask, default gateway, and DNS server.
+
+## 3. DNS Resolution
+
+The laptop needs to resolve the domain `www.example.com` into an IP address.
+
+1. The laptop sends a `DNS query` to a DNS server.
+2. The DNS server returns the corresponding IP address, such as `93.184.216.34`.
+
+## 4. Data Encapsulation and Local Transmission
+
+The browser prepares an HTTP or HTTPS request. The data is encapsulated as it moves through the network layers.
+
+| Layer | Function |
+|---|---|
+| `Application Layer` | Creates the HTTP/HTTPS request. |
+| `Transport Layer` | Adds TCP information, including source and destination ports. HTTP commonly uses port `80`, while HTTPS uses port `443`. |
+| `Internet Layer` | Adds IP addresses to create an IP packet. |
+| `Link Layer` | Encapsulates the packet in an Ethernet or Wi-Fi frame containing MAC addresses. |
+
+Before sending the frame, the laptop uses its `ARP table` or sends an `ARP request` to discover the router's MAC address. The frame is then sent to the router.
+
+## 5. Network Address Translation (NAT)
+
+The router uses `Network Address Translation (NAT)` to replace the laptop's private IP address with its public IP address for internet communication.
+
+Example:
+
+- Private IP: `192.168.1.10`
+- Public IP: `203.0.113.45`
+- Destination IP: `93.184.216.34`
+
+The packet travels through the ISP's network and intermediate routers, which use the destination IP address to determine where to forward it.
+
+## 6. Server Receives and Responds
+
+The destination server's firewall checks whether the incoming traffic is allowed. If permitted, the web server software, such as Apache, Nginx, or IIS, processes the request and prepares the webpage.
+
+The server sends a response back through the internet. When the response reaches the home router, NAT maps it back to the laptop's private IP address.
+
+## 7. Decapsulation and Display
+
+The laptop receives the response and removes the network headers and frame information as the data moves up the network layers.
+
+Finally, the browser processes the returned HTML, CSS, and JavaScript and displays the webpage.
+
+## Summary
+
+- `WLAN`: Connects the laptop to the local wireless network.
+- `DHCP`: Assigns an IP address and other network configuration details.
+- `DNS`: Resolves domain names into IP addresses.
+- `Encapsulation`: Wraps data with the information required for network transmission.
+- `ARP`: Helps discover the MAC address of the default gateway.
+- `NAT`: Maps private and public IP addresses for internet communication.
+- `Routers`: Forward packets toward their destination using IP addresses.
+- `Firewall`: Filters incoming traffic according to security rules.
+- `Decapsulation`: Removes network encapsulation information so the application can process the received data.
+
+**Overall process:** Connect to WLAN → Obtain IP configuration → Resolve DNS → Encapsulate and send the request → Apply NAT → Reach the web server → Receive the response → Decapsulate and display the webpage.
